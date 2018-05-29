@@ -2,6 +2,9 @@
 
 // Alt der gælder for mobil og højere
 
+$blue: #0097d7;
+$lightblue: #75c1e1;
+
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
@@ -29,6 +32,30 @@ li {
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  p {
+    width: 50vw;
+    margin: 2.5vh 2.5vh 0 2.5vh;
+    p {
+      width: 50vw;
+    }
+  }
+
+
+}
+
+#particles-js {
+  background-color: $lightblue;
+  height: 100vh;
+  width: 100vw;
 }
 
 // Sikrer billeder er responsive
