@@ -8,6 +8,7 @@ $lightblue: #75c1e1;
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
+  font-weight: bold;
 }
 
 ul, ol {
@@ -34,35 +36,47 @@ p {
   padding: 0; // Ingen indre margen fra paragraffer
 }
 
+// Sikrer billeder er responsive
+img {
+  display: block; // Billeder er et element (laver linjeskift)
+  max-width: 100%; // Bredde må maks fylde 100%
+  height: auto; // Højden skal tilpasse sig
+}
+
 header {
   width: 100vw;
   height: 10vh;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  p {
-    width: 50vw;
+  div {
+    width: 100vw;
+    height: 7.5vh;
     margin: 2.5vh 2.5vh 0 2.5vh;
-    p {
-      width: 50vw;
-    }
   }
+}
 
+#forside {
+  height: 75vh;
+  background-image: url("../images/forside.jpg");
+  background-size: cover;
+  background-position: center;
 
+}
+
+#om_jci {
+  height: 150vh;
+  margin: 2.5%;
+  h1 {
+    text-align: center;
+  }
 }
 
 #particles-js {
   background-color: $lightblue;
   height: 100vh;
   width: 100vw;
-}
-
-// Sikrer billeder er responsive
-img {
-  display: block; // Billeder er et element (laver linjeskift)
-  max-width: 100%; // Bredde må maks fylde 100%
-  height: auto; // Højden skal tilpasse sig
 }
 
 @media screen and (min-width: 768px) {
