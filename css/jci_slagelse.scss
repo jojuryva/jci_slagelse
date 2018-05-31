@@ -107,7 +107,7 @@ header {
 
 #forside {
   height: 100vh;
-  background-image: url("../images/forside.jpg");
+  //background-image: url("../images/forside.jpg");
   background-size: cover;
   background-position: center;
 
@@ -208,8 +208,71 @@ header {
 
 }
 
+
+//projektarbejde
+.flex-projektarbejde{
+  display: block;
+}
+
+.projektarbejde{
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt;
+  margin-top: 10%;
+  margin-bottom: 25%;
+}
+
+.projekttekst{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+}
+
+.projektbillede2{
+  display: none;
+}
+
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+  .eventoverskrift{
+    text-align: center;
+    font-size: 17pt;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  .konkurrencer{
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 12pt;
+  }
+
+  .kongresser{
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 12pt;
+  }
+
+  .nationalkongres{
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 12pt;
+  }
+
+  .projektarbejde{
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 12pt;
+  }
+
+}
+
+
+@media screen and (min-width: 992px) {
+  // Alt der ændres i tablet liggende fra mobil og tablet stående
+  //konkurrencer
   .eventoverskrift{
     text-align: center;
     font-size: 25pt;
@@ -301,11 +364,44 @@ header {
     margin-bottom: 8%;
   }
 
-}
+  .flex-konkurrencer{
+    display: flex;
+    flex-direction: row;
+  }
 
+  //projektarbejde
 
-@media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
+  .projektarbejde{
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 17pt;
+  }
+
+  .projekttekst{
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+
+  .projektbillede{
+    width: 50%;
+    margin-right: 3%;
+  }
+
+  .projektarbejde{
+    margin-top: 2%;
+    margin-bottom: -5%;
+  }
+
+  .flex-projektarbejde{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .projektbillede2{
+    display: block;
+    margin-top: 15%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
