@@ -2,37 +2,104 @@
 <!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
 <html lang="da">
-
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
-
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
-
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
-
+    <title>JCI Slagelse</title>
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/jci_slagelse.css" rel="stylesheet" type="text/css">
-
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
+<section class="vi-tilbyder_knapper">
+    <h1>VI TILBYDER</h1>
+    <div class="vi-tilbyder_flex">
+        <div class="vi-tilbyder_knap1">GENERALT</div>
+        <div class="vi-tilbyder_knap2">UDDANNELSE</div>
+        <div class="vi-tilbyder_knap3">TRAINING <br>& KURSER</div>
+    </div>
+</section>
 
+<section class="vi-tilbyder_generalt">
+    <h1>VI TILBYDER</h1>
+    <img class="vi-tilbyder_runde-billeder" src="images/vi_tilbyder1_generelt.JPG" alt="Som medlem af JCI får man et godt netværk og mulighed for at udvikle sine taleevner.">
+    <div class="textbox">
+        <h2>GENERALT</h2>
+        <p>Hos JCI tilbyder vi at blive medlem i det førende netværk for unge i 20érne og 30érne, vi hjælper hinanden med udvikling inden for:</p>
+        <li>Personal Development</li>
+        <li>Business</li>
+        <li>Community</li>
+        <li>International</li>
+        <br>
+            <p>Dette gør vi blandt andet gennem kurser, trainings og en række uddannelser der tilbydes alle JCI medlemmer, dette kan du læse mere om længere nede.<br>
+        <br>
+            Når du er medlem af JCI får du enestående muligheder for at udvikle dine ledelseskompetencer, blandt andet gennem praktiske ledelsesopgaver.<br>
+        <br>
+            I JCI lære vi hvordan vi påtager os rollen som en god leder, vi er fremtidens ledere.<br>
+            Vi har forskellige lederstillinger du kan vælge imellem at påtage dig, det er helt fra lokalt, regionalt, lokalt eller internationalt.<br>
+        <br>
+            Herunder kan du læse om de unikke tilbud for sparring, netværk, træning samt praktisk "learning in action" vi tilbyder, for at give dig, de bedste betingelser for at udvikle dig som leder.</p>
+    </div>
+</section>
+
+<section class="vi-tilbyder_uddannelser">
+    <img class="vi-tilbyder_runde-billeder" src="images/vi_tilbyder2_uddandelse.JPG" alt="Vi giver mulighed for uddannelser, hvor du kan udvikle dig fagligt.">
+    <div class="textbox">
+        <h2>UDDANNELSER</h2>
+        <p>Alle JCI Danmark´s medlemmer tilbydes gennem Training Institute følgende uddannelser:</p>
+        <li>Deputy Local Presidents Training</li>
+        <li>Local Leaders Training</li>
+        <li>Bestyrelsesuddannelse</li>
+        <li>Træneruddannelse</li>
+        <br>
+            <p>Alle uddannelser vare mellem 3 og 5 moduler, hver modul vare 1 dag. Nogle af uddannelserne har også "bonus weekender", her er der ekstra fokus på dig, og du vil blive udfordret til det yderste. Bonus weekenderne er inkluderet i prisen, og er frivillig, men det kan kun anbefales at deltage.<br>
+        <br>
+            Uddannelserne JCI tilbyder er selv betalt, og prisen ligger mellem 525 og 5000 kr., derudover er der nogle af uddannelserne der kræver at man betaler for overnatning.</p>
+    </div>
+</section>
+
+<section class="vi-tilbyder_kurser">
+    <img class="vi-tilbyder_runde-billeder" src="images/vi_tilbyder3_kurser.JPG" alt="Der er rig mulighed for at deltage i forskellige kurser.">
+    <div class="textbox">
+        <h2>TRAINING & KURSER</h2>
+        <p>JCI tilbyder en række workshops, kurser og træninger til alle medlemmer, for at alle har mulighed for at udvikle sig løbende. Der tilbydes f.eks. Træninger i præsentationsteknik, salg, forandringsledelse og meget andet.<br>
+        <br>
+            Alle medlemmer har selvfølgelig indflydelse på, hvad der tilbydes af workshops og træninger, for at det bedst muligt rammer de rigtige og relevante punkter for netop jer.<br>
+        <br>
+            Kort sagt, uanset om du vil deltage på de bedste træninger eller om du vil afholde dem, så er JCI et professionelt netværket for dig.</p>
+    </div>
+</section>
+
+<a href="javascript:" id="tiltop-btn" title="to top"><i class="fas fa-angle-up"></i></a>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
     $(document).ready(function (e) {
-        alert("")
+        //Til top knap START -------------
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) { //Hvis man scroller mere end 50 px
+                $('#tiltop-btn').fadeIn(200);
+            } else {
+                $('#tiltop-btn').fadeOut(200);
+            }
+        });
+        $('#tiltop-btn').click(function() {
+            $('body,html').animate({
+                scrollTop : 0
+            }, 500);
+        });
+        //Til top knap SLUT --------------
     });
 </script>
 </body>

@@ -2,48 +2,156 @@
 
 // Alt der gælder for mobil og højere
 
-* { // Gælder alt på hele siden
-  -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
-  box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
-}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
 
 body {
-  margin: 0; // Ingen kanter i siden af browser
+  margin: 0; }
+
+h1 {
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 35pt;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: normal;
+  font-size: 20pt;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0; // Ingen ydre margen fra overskrifter
-  padding: 0; // Ingen indre margen fra overskrifter
-}
+  margin: 0;
+  padding: 0;
+  font-weight: bold; }
 
 ul, ol {
-  margin: 0; // Ingen ydre margen fra lister
-  padding: 0; // Ingen indre margen fra lister
-  list-style-position: inside; // List punkter står på linje
-}
+  margin: 0;
+  padding: 0;
+  list-style-position: inside; }
 
 li {
-  margin: 0; // Ingen ydre margen fra listpunkter
-}
+  margin: 0; }
 
-p {
-  margin: 0; // Ingen ydre margen fra paragraffer
-  padding: 0; // Ingen indre margen fra paragraffer
-}
+p, li {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0; }
 
-// Sikrer billeder er responsive
 img {
-  display: block; // Billeder er et element (laver linjeskift)
-  max-width: 100%; // Bredde må maks fylde 100%
-  height: auto; // Højden skal tilpasse sig
+  font-family: "Arial", sans-serif;
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.textbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 40px;
 }
+
+//UNDERSIDE - Vi tilbyder - Sabine START -----------------------
+.vi-tilbyder_knapper {
+  display: none; /*Section med knapper er ikke synlig på mobil*/}
+
+.vi-tilbyder_runde-billeder{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 60%;
+}
+
+.vi-tilbyder_generalt, .vi-tilbyder_kurser {
+  background-color: lightblue;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.vi-tilbyder_kurser {
+  padding-top:10px;
+  padding-bottom: 40px;
+}
+//UNDERSIDE - Vi tilbyder - Sabine SLUT -----------------------
+
+//Knap til top START -----------------------
+#tiltop-btn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#f37121;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 2px;
+}
+
+#tiltop-btn:hover {
+  background-color:#f37121;
+  border: 2px solid white;
+  padding-top: 0;
+}
+//Knap til top SLUT ------------------------
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+  h1{
+    font-size: 50pt;}
+
+  //UNDERSIDE - Vi tilbyder - Sabine --------------------------
+  .vi-tilbyder_knapper {
+    display: block;
+    padding-top: 40px;
+  }
+  .vi-tilbyder_flex {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .vi-tilbyder_knap1, .vi-tilbyder_knap2, .vi-tilbyder_knap3 {
+    border-radius: 50%;
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 20%;
+    background-color: #0097d7;
+    color: white;
+    text-align: center;
+  }
+  .vi-tilbyder_knap2 {
+    background-color: #f37121;}
+  .vi-tilbyder_knap3 {
+    background-color: #006088;
+  }
+  .vi-tilbyder_generalt h1{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+  h1 {
+    font-size: 75pt;
+  }
 }
 
 @media screen and (min-width: 1200px) {

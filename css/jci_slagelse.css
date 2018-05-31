@@ -1,13 +1,29 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
 
 body {
   margin: 0; }
 
+h1 {
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 35pt;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 70px; }
+
+h2 {
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: normal;
+  font-size: 20pt; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-weight: bold; }
 
 ul, ol {
   margin: 0;
@@ -17,13 +33,104 @@ ul, ol {
 li {
   margin: 0; }
 
-p {
+p, li {
+  font-size: 10pt;
   margin: 0;
   padding: 0; }
 
 img {
+  font-family: "Arial", sans-serif;
   display: block;
   max-width: 100%;
   height: auto; }
+
+.textbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 40px; }
+
+.vi-tilbyder_knapper {
+  display: none;
+  /*Section med knapper er ikke synlig på mobil*/ }
+
+.vi-tilbyder_runde-billeder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 60%; }
+
+.vi-tilbyder_generalt, .vi-tilbyder_kurser {
+  background-color: lightblue;
+  width: 100%;
+  padding-top: 60px; }
+
+.vi-tilbyder_kurser {
+  padding-top: 10px;
+  padding-bottom: 40px; }
+
+#tiltop-btn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f37121;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 2px; }
+
+#tiltop-btn:hover {
+  background-color: #f37121;
+  border: 2px solid white;
+  padding-top: 0; }
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 50pt; }
+
+  .vi-tilbyder_knapper {
+    display: block;
+    padding-top: 40px; }
+
+  .vi-tilbyder_flex {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .vi-tilbyder_knap1, .vi-tilbyder_knap2, .vi-tilbyder_knap3 {
+    border-radius: 50%;
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 20%;
+    background-color: #0097d7;
+    color: white;
+    text-align: center; }
+
+  .vi-tilbyder_knap2 {
+    background-color: #f37121; }
+
+  .vi-tilbyder_knap3 {
+    background-color: #006088; }
+
+  .vi-tilbyder_generalt h1 {
+    display: none; } }
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 75pt; } }
 
 /*# sourceMappingURL=jci_slagelse.css.map */
