@@ -38,6 +38,97 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+header {
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+
+  #menu {
+    height: 7.5vh;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin: 2.5vh 2.5vh 0 2.5vh;
+
+    #navMobile {
+      line-height: 7.5vh;
+      height: 7.5vh;
+      color: white;
+
+      #navBars {
+        cursor: pointer;
+      }
+    }
+
+    #navElements {
+      width: 100vw;
+      display: none;
+      position: absolute;
+      z-index: 100;
+      margin: 7.5vh 0 0 -2.5vh;
+
+      a {
+        display: block;
+        line-height: 7.5vh;
+        height: 7.5vh;
+        text-align: center;
+        text-decoration: none;
+        background-color: $blue;
+        color: white;
+        font-size: 16px;
+
+        &:hover {
+          background-color: white;
+          color: $blue;
+          cursor: pointer;
+          border-bottom: solid white 2.5px;
+        }
+      }
+
+      #clickShow_1_2, #clickShow_2_2 {
+        display: none;
+        a {
+          background-color: royalblue;
+        }
+      }
+    }
+  }
+}
+
+#some {
+  line-height: 7.5vh;
+}
+
+#forside {
+  height: 100vh;
+  background-image: url("../images/forside.jpg");
+  background-size: cover;
+  background-position: center;
+
+  #logo {
+    width: 50vw;
+    margin: auto;
+    padding: 25vh 0 0 0;
+  }
+}
+
+#om_jci {
+  height: 150vh;
+  margin: 10vh 2.5vw;
+  h1 {
+    text-align: center;
+  }
+}
+
+#particles-js {
+  background-color: $lightblue;
+  height: 100vh;
+  width: 100vw;
+}
+
 .eventoverskrift{
   text-align: center;
   font-size: 12pt;

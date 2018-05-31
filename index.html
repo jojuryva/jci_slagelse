@@ -28,11 +28,30 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
     $(document).ready(function (e) {
-        alert("")
+        $("#navMobile").click(function (e) {
+            $("#navElements").slideToggle(300);
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if(width > 992) {
+                $("#navElements").css({"display":"-webkit-flex", "display":"flex"});
+            } else {
+                $("#navElements").css("display", "none");
+            }
+        });
+
+        $("#click_1").click(function (e) {
+            $("#clickShow_1_2").slideToggle(500);
+        });
+
+        $("#click_2").click(function (e) {
+            $("#clickShow_2_2").slideToggle(500);
+        });
     });
 </script>
 </body>
