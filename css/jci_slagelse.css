@@ -40,17 +40,54 @@ header {
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
-    margin: 25% 24vh 0 2.5vh; }
+    margin: 2.5vh 2.5vh 0 2.5vh; }
+    header #menu #navMobile {
+      line-height: 7.5vh;
+      height: 7.5vh;
+      color: white; }
+      header #menu #navMobile #navBars {
+        cursor: pointer; }
+    header #menu #navElements {
+      width: 100vw;
+      display: none;
+      position: absolute;
+      z-index: 100;
+      margin: 7.5vh 0 0 -2.5vh; }
+      header #menu #navElements a {
+        display: block;
+        line-height: 7.5vh;
+        height: 7.5vh;
+        text-align: center;
+        text-decoration: none;
+        background-color: #0097d7;
+        color: white;
+        font-size: 16px; }
+        header #menu #navElements a:hover {
+          background-color: white;
+          color: #0097d7;
+          cursor: pointer;
+          border-bottom: solid white 2.5px; }
+      header #menu #navElements #clickShow_1_2, header #menu #navElements #clickShow_2_2 {
+        display: none; }
+        header #menu #navElements #clickShow_1_2 a, header #menu #navElements #clickShow_2_2 a {
+          background-color: royalblue; }
+
+#some {
+  line-height: 7.5vh; }
 
 #forside {
-  height: 75vh;
+  height: 100vh;
   background-image: url("../images/forside.jpg");
   background-size: cover;
   background-position: center; }
+  #forside #logo {
+    width: 50vw;
+    margin: auto;
+    padding: 25vh 0 0 0; }
 
 #om_jci {
   height: 150vh;
-  margin: 2.5%; }
+  margin: 10vh 2.5vw; }
   #om_jci h1 {
     text-align: center; }
 

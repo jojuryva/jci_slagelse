@@ -9,6 +9,7 @@
     <!-- Titel som ses oppe i browserens tab mv. -->
     <title>JCI Slagelse</title>
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
@@ -23,10 +24,28 @@
 <body>
     <header>
         <div id="menu">
-            <div>
-                <i class="fas fa-bars fa-2x"></i>
-            </div>
-            <div>
+            <nav id="navMobile">
+                <i id="navBars" class="fas fa-bars fa-2x"></i>
+            </nav>
+            <nav id="navElements">
+                <a href="#" id="click_1">Om JCI</a>
+                <div id="clickShow_1_2">
+                    <a href="#">Medlemsskab</a>
+                    <a href="#">Hvem Er Vi?</a>
+                    <a href="#">Partnere</a>
+                </div>
+                <a href="#">Vi Tilbyder</a>
+                <a href="#" id="click_2">Events</a>
+                <div id="clickShow_2_2">
+                    <a href="#">Kalender</a>
+                    <a href="#">Konkurrencer</a>
+                    <a href="#">Kongresser</a>
+                    <a href="#">Projektarbejde</a>
+                </div>
+                <a href="#">Grangia</a>
+                <a href="#">Kontakt</a>
+            </nav>
+            <div id="some">
                 <i class="fab fa-facebook-square fa-2x"></i>
                 <i class="fab fa-instagram fa-2x"></i>
                 <i class="fab fa-linkedin fa-2x"></i>
@@ -34,25 +53,43 @@
         </div>
     </header>
     <section id="forside">
+        <img id="logo" src="images/logo_hvid.png">
     </section>
     <section id="om_jci">
         <h1>
-            OM JCI
+            Om JCI
         </h1>
-
-
     </section>
     <section id="particles-js">
-
     </section>
     <section id="">
-
     </section>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $(document).ready(function (e) {
+            $("#navMobile").click(function (e) {
+                $("#navElements").slideToggle(300);
+            });
+
+            $(window).resize(function (e) {
+                var width = $(window).width();
+
+                if(width > 992) {
+                    $("#navElements").css({"display":"-webkit-flex", "display":"flex"});
+                } else {
+                    $("#navElements").css("display", "none");
+                }
+            });
+
+            $("#click_1").click(function (e) {
+                $("#clickShow_1_2").slideToggle(500);
+            });
+
+            $("#click_2").click(function (e) {
+                $("#clickShow_2_2").slideToggle(500);
+            });
 
         });
     </script>
