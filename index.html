@@ -23,9 +23,17 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
     <header>
+        <img id="logoWeb" src="images/logo_farve.png">
         <div id="menu">
             <nav id="navMobile">
                 <i id="navBars" class="fas fa-bars fa-2x"></i>
+            </nav>
+            <nav id="navWeb">
+                <a href="#" id="clickWeb_1">Om JCI</a>
+                <a href="#">Vi Tilbyder</a>
+                <a href="#" id="clickWeb_2">Events</a>
+                <a href="#">Grangia</a>
+                <a href="#">Kontakt</a>
             </nav>
             <nav id="navElements">
                 <a href="#" id="click_1">Om JCI</a>
@@ -50,6 +58,19 @@
                 <i class="fab fa-instagram fa-2x"></i>
                 <i class="fab fa-linkedin fa-2x"></i>
             </div>
+        </div>
+    </header>
+    <header id="subHeader">
+        <div id="clickShowWeb_1_2">
+            <a href="#">Medlemsskab</a>
+            <a href="#">Hvem Er Vi?</a>
+            <a href="#">Partnere</a>
+        </div>
+        <div id="clickShowWeb_2_2">
+            <a href="#">Kalender</a>
+            <a href="#">Konkurrencer</a>
+            <a href="#">Kongresser</a>
+            <a href="#">Projektarbejde</a>
         </div>
     </header>
     <section id="forside">
@@ -77,20 +98,19 @@
                 var width = $(window).width();
 
                 if(width > 992) {
-                    $("#navElements").css({"display":"-webkit-flex", "display":"flex"});
-                } else {
                     $("#navElements").css("display", "none");
                 }
             });
 
             $("#click_1").click(function (e) {
                 $("#clickShow_1_2").slideToggle(500);
+                $("#clickShow_2_2").slideUp(500);
             });
 
             $("#click_2").click(function (e) {
                 $("#clickShow_2_2").slideToggle(500);
+                $("#clickShow_1_2").slideUp(500);
             });
-
         });
     </script>
 </body>
