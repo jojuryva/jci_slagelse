@@ -1,103 +1,229 @@
-/*
-Error: Undefined variable: "$blue".
-        on line 79 of jci_slagelse.scss
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
-74:         display: block;
-75:         line-height: 7.5vh;
-76:         height: 7.5vh;
-77:         text-align: center;
-78:         text-decoration: none;
-79:         background-color: $blue;
-80:         color: white;
-81:         font-size: 16px;
-82: 
-83:         &:hover {
-84:           background-color: white;
+body {
+  margin: 0; }
 
-Backtrace:
-jci_slagelse.scss:79
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/bin/scss:13:in `<top (required)>'
-C:/Ruby24-x64/bin/scss:23:in `load'
-C:/Ruby24-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 79 of jci_slagelse.scss\A \A 74:         display: block;\A 75:         line-height: 7.5vh;\A 76:         height: 7.5vh;\A 77:         text-align: center;\A 78:         text-decoration: none;\A 79:         background-color: $blue;\A 80:         color: white;\A 81:         font-size: 16px;\A 82: \A 83:         &:hover {\A 84:           background-color: white;"; }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside; }
+
+li {
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+header {
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white; }
+  header #menu {
+    height: 7.5vh;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin: 2.5vh 2.5vh 0 2.5vh; }
+    header #menu #navMobile {
+      line-height: 7.5vh;
+      height: 7.5vh;
+      color: white; }
+      header #menu #navMobile #navBars {
+        cursor: pointer; }
+    header #menu #navElements {
+      width: 100vw;
+      display: none;
+      position: absolute;
+      z-index: 100;
+      margin: 7.5vh 0 0 -2.5vh; }
+      header #menu #navElements a {
+        display: block;
+        line-height: 7.5vh;
+        height: 7.5vh;
+        text-align: center;
+        text-decoration: none;
+        background-color: #0097d7;
+        color: white;
+        font-size: 16px; }
+        header #menu #navElements a:hover {
+          background-color: white;
+          color: #0097d7;
+          cursor: pointer;
+          border-bottom: solid white 2.5px; }
+      header #menu #navElements #clickShow_1_2, header #menu #navElements #clickShow_2_2 {
+        display: none; }
+        header #menu #navElements #clickShow_1_2 a, header #menu #navElements #clickShow_2_2 a {
+          background-color: royalblue; }
+
+#some {
+  line-height: 7.5vh; }
+
+#forside {
+  height: 100vh;
+  background-image: url("../images/forside.jpg");
+  background-size: cover;
+  background-position: center; }
+  #forside #logo {
+    width: 50vw;
+    margin: auto;
+    padding: 25vh 0 0 0; }
+
+#om_jci {
+  height: 150vh;
+  margin: 10vh 2.5vw; }
+  #om_jci h1 {
+    text-align: center; }
+
+#particles-js {
+  background-color: #75c1e1;
+  height: 100vh;
+  width: 100vw; }
+
+.eventoverskrift {
+  text-align: center;
+  font-size: 12pt;
+  margin-top: 10%;
+  margin-bottom: 5%; }
+
+.flex-konkurrencer {
+  display: block; }
+
+.konkurrencer {
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt; }
+
+.ssdb {
+  margin-top: 10%;
+  margin-bottom: 25%; }
+
+.konkurrencetekst {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%; }
+
+.dgm {
+  margin-top: 10%;
+  margin-bottom: 25%; }
+
+.flex-kongresser {
+  display: block; }
+
+.kongresser {
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt; }
+
+.kongrestekst {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%; }
+
+.nationalkongres {
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt; }
+
+.nationalkongrestekst {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%; }
+
+.nationalkongres {
+  margin-top: 10%;
+  margin-bottom: 25%; }
+
+.kongresser {
+  margin-top: 10%; }
+
+@media screen and (min-width: 768px) {
+  .eventoverskrift {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 5%; }
+
+  .flex-konkurrencer {
+    display: flex;
+    flex-direction: row; }
+
+  .konkurrencer {
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 17pt; }
+
+  .konkurrencetekst {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 10%; }
+
+  .ssdbbillede {
+    width: 50%;
+    margin-right: 3%; }
+
+  .dgmbillede {
+    width: 50%;
+    margin-right: 3%; }
+
+  .ssdb {
+    margin-top: 2%;
+    margin-bottom: -5%; }
+
+  .dgm {
+    margin-bottom: 8%; }
+
+  .flex-kongresser {
+    display: flex;
+    flex-direction: row; }
+
+  .kongresser {
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 17pt; }
+
+  .nationalkongres {
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 17pt; }
+
+  .kongrestekst {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 10%; }
+
+  .nationalkongrestekst {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 10%; }
+
+  .kongresbillede {
+    width: 50%;
+    margin-right: 3%; }
+
+  .nationalkongresbillede {
+    width: 50%;
+    margin-right: 3%; }
+
+  .kongresser {
+    margin-top: 2%;
+    margin-bottom: -5%; }
+
+  .nationalkongres {
+    margin-bottom: 8%; } }
+
+/*# sourceMappingURL=jci_slagelse.css.map */
