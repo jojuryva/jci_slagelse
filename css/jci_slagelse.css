@@ -26,4 +26,136 @@ img {
   max-width: 100%;
   height: auto; }
 
+.eventoverskrift {
+  text-align: center;
+  font-size: 12pt;
+  margin-top: 10%;
+  margin-bottom: 5%; }
+
+.flex-konkurrencer {
+  display: block; }
+
+.konkurrencer {
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt; }
+
+.ssdb {
+  margin-top: 10%;
+  margin-bottom: 25%; }
+
+.konkurrencetekst {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%; }
+
+.dgm {
+  margin-top: 10%;
+  margin-bottom: 25%; }
+
+.flex-kongresser {
+  display: block; }
+
+.kongresser {
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt; }
+
+.kongrestekst {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%; }
+
+.nationalkongres {
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt; }
+
+.nationalkongrestekst {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%; }
+
+.nationalkongres {
+  margin-top: 10%;
+  margin-bottom: 25%; }
+
+.kongresser {
+  margin-top: 10%; }
+
+@media screen and (min-width: 768px) {
+  .eventoverskrift {
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 2%;
+    margin-bottom: 5%; }
+
+  .flex-konkurrencer {
+    display: flex;
+    flex-direction: row; }
+
+  .konkurrencer {
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 17pt; }
+
+  .konkurrencetekst {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 10%; }
+
+  .ssdbbillede {
+    width: 50%;
+    margin-right: 3%; }
+
+  .dgmbillede {
+    width: 50%;
+    margin-right: 3%; }
+
+  .ssdb {
+    margin-top: 2%;
+    margin-bottom: -5%; }
+
+  .dgm {
+    margin-bottom: 8%; }
+
+  .flex-kongresser {
+    display: flex;
+    flex-direction: row; }
+
+  .kongresser {
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 17pt; }
+
+  .nationalkongres {
+    margin-right: 12%;
+    margin-left: 10%;
+    font-size: 17pt; }
+
+  .kongrestekst {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 10%; }
+
+  .nationalkongrestekst {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 10%; }
+
+  .kongresbillede {
+    width: 50%;
+    margin-right: 3%; }
+
+  .nationalkongresbillede {
+    width: 50%;
+    margin-right: 3%; }
+
+  .kongresser {
+    margin-top: 2%;
+    margin-bottom: -5%; }
+
+  .nationalkongres {
+    margin-bottom: 8%; } }
+
 /*# sourceMappingURL=jci_slagelse.css.map */
