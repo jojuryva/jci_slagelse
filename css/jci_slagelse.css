@@ -35,7 +35,6 @@ header {
   height: 10vh;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
   color: white; }
   header #logoWeb {
     display: none; }
@@ -78,6 +77,9 @@ header {
         header #menu #navElements #clickShow_1_2 a, header #menu #navElements #clickShow_2_2 a {
           background-color: royalblue; }
 
+#header {
+  background-color: rgba(0, 0, 0, 0.7); }
+
 #subHeader {
   display: none; }
 
@@ -105,6 +107,50 @@ header {
   height: 100vh;
   width: 100vw; }
 
+@media screen and (min-width: 568px) {
+  header {
+    height: 15vh; }
+    header #menu {
+      height: 15vh; }
+      header #menu #navMobile {
+        line-height: 7.5vh;
+        height: 7.5vh;
+        color: white; }
+        header #menu #navMobile #navBars {
+          cursor: pointer; }
+      header #menu #navWeb {
+        display: none; }
+      header #menu #navElements {
+        width: 100vw;
+        display: none;
+        position: absolute;
+        z-index: 100;
+        margin: 12.5vh 0 0 -2.5vh; }
+        header #menu #navElements a {
+          display: block;
+          line-height: 10vh;
+          height: 10vh;
+          text-align: center;
+          text-decoration: none;
+          background-color: #0097d7;
+          color: white;
+          font-size: 16px; }
+          header #menu #navElements a:hover {
+            background-color: white;
+            color: #0097d7;
+            cursor: pointer;
+            border-bottom: solid white 2.5px; }
+        header #menu #navElements #clickShow_1_2, header #menu #navElements #clickShow_2_2 {
+          display: none; }
+          header #menu #navElements #clickShow_1_2 a, header #menu #navElements #clickShow_2_2 a {
+            background-color: royalblue; } }
+@media screen and (min-width: 768px) {
+  header {
+    height: 15vh; }
+    header #menu {
+      height: 15vh; }
+      header #menu #navElements {
+        margin: 12.5vh 0 0 -2.5vh; } }
 @media screen and (min-width: 992px) {
   header {
     display: flex; }
@@ -119,7 +165,7 @@ header {
       header #menu #navWeb {
         display: flex;
         justify-content: space-between; }
-        header #menu #navWeb a {
+        header #menu #navWeb a, header #menu #navWeb #test {
           height: 10vh;
           line-height: 10vh;
           width: 14.5vw;
@@ -127,30 +173,47 @@ header {
           text-decoration: none;
           color: white;
           font-size: 24px; }
-          header #menu #navWeb a:hover {
+          header #menu #navWeb a:hover, header #menu #navWeb #test:hover {
             background-color: #0097d7;
             cursor: pointer; }
       header #menu #some {
         margin: 2vh 0 0 2.5vw; }
 
   #subHeader {
-    display: flex;
-    top: 10vh;
-    background-color: #0097d7; }
-    #subHeader #clickShowWeb_1_2, #subHeader #clickShowWeb_2_2 {
-      display: flex;
-      justify-content: space-around; }
-      #subHeader #clickShowWeb_1_2 a, #subHeader #clickShowWeb_2_2 a {
+    display: none;
+    top: 10vh; }
+    #subHeader #clickShowWeb_1_2 {
+      background-color: #0097d7;
+      display: none; }
+      #subHeader #clickShowWeb_1_2 a {
         height: 10vh;
         line-height: 10vh;
-        width: 14vw;
+        width: 33.3vw;
         text-align: center;
         text-decoration: none;
         color: white;
         font-size: 20px; }
-        #subHeader #clickShowWeb_1_2 a:hover, #subHeader #clickShowWeb_2_2 a:hover {
+        #subHeader #clickShowWeb_1_2 a:hover {
+          background-color: white;
+          color: #0097d7;
+          cursor: pointer; }
+    #subHeader #clickShowWeb_2_2 {
+      background-color: #0097d7;
+      display: none; }
+      #subHeader #clickShowWeb_2_2 a {
+        height: 10vh;
+        line-height: 10vh;
+        width: 25vw;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 20px; }
+        #subHeader #clickShowWeb_2_2 a:hover {
           background-color: white;
           color: #0097d7;
           cursor: pointer; } }
+@media screen and (min-width: 1024px) {
+  #logoWeb {
+    margin: 1.5vh -2vw 1.5vh 2vw; } }
 
 /*# sourceMappingURL=jci_slagelse.css.map */

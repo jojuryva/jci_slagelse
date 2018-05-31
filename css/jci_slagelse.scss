@@ -50,7 +50,6 @@ header {
   height: 10vh;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
   color: white;
 
   #logoWeb {
@@ -113,6 +112,10 @@ header {
   }
 }
 
+#header {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 #subHeader {
   display: none;
 }
@@ -148,8 +151,79 @@ header {
   width: 100vw;
 }
 
+@media screen and (min-width: 568px) {
+  // Alt der ændres i tablet stående fra mobil
+
+  header {
+    height: 15vh;
+
+    #menu {
+      height: 15vh;
+
+      #navMobile {
+        line-height: 7.5vh;
+        height: 7.5vh;
+        color: white;
+
+        #navBars {
+          cursor: pointer;
+        }
+      }
+
+      #navWeb {
+        display: none;
+      }
+
+      #navElements {
+        width: 100vw;
+        display: none;
+        position: absolute;
+        z-index: 100;
+        margin: 12.5vh 0 0 -2.5vh;
+
+        a {
+          display: block;
+          line-height: 10vh;
+          height: 10vh;
+          text-align: center;
+          text-decoration: none;
+          background-color: $blue;
+          color: white;
+          font-size: 16px;
+
+          &:hover {
+            background-color: white;
+            color: $blue;
+            cursor: pointer;
+            border-bottom: solid white 2.5px;
+          }
+        }
+
+        #clickShow_1_2, #clickShow_2_2 {
+          display: none;
+          a {
+            background-color: royalblue;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+  header {
+    height: 15vh;
+
+    #menu {
+      height: 15vh;
+
+      #navElements {
+        margin: 12.5vh 0 0 -2.5vh;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -175,7 +249,7 @@ header {
         display: flex;
         justify-content: space-between;
 
-        a {
+        a, #test {
           height: 10vh;
           line-height: 10vh;
           width: 14.5vw;
@@ -198,18 +272,17 @@ header {
   }
 
   #subHeader {
-    display: flex;
+    display: none;
     top: 10vh;
-    background-color: $blue;
 
-    #clickShowWeb_1_2, #clickShowWeb_2_2 {
-      display: flex;
-      justify-content: space-around;
+    #clickShowWeb_1_2 {
+      background-color: $blue;
+      display: none;
 
       a {
         height: 10vh;
         line-height: 10vh;
-        width: 14vw;
+        width: 33.3vw;
         text-align: center;
         text-decoration: none;
         color: white;
@@ -222,6 +295,34 @@ header {
         }
       }
     }
+
+    #clickShowWeb_2_2 {
+      background-color: $blue;
+      display: none;
+
+      a {
+        height: 10vh;
+        line-height: 10vh;
+        width: 25vw;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+
+        &:hover {
+          background-color: white;
+          color: $blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #logoWeb {
+    margin: 1.5vh -2vw 1.5vh 2vw;
   }
 }
 

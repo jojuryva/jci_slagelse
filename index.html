@@ -22,7 +22,7 @@
 </head>
 <!-- i <body> har man alt indhold på siden -->
 <body>
-    <header>
+    <header id="header">
         <img id="logoWeb" src="images/logo_farve.png">
         <div id="menu">
             <nav id="navMobile">
@@ -110,6 +110,32 @@
             $("#click_2").click(function (e) {
                 $("#clickShow_2_2").slideToggle(500);
                 $("#clickShow_1_2").slideUp(500);
+            });
+
+            $("#clickWeb_1").hover(function (e) {
+                $("#subHeader").css ("display", "block");
+                $("#clickShowWeb_1_2").css ("display", "flex");
+                $("#clickShowWeb_1_2").show ();
+            }, function(e) {
+                $("#clickShowWeb_1_2").hide();
+                $("#clickShowWeb_1_2").hover(function (e) {
+                    $("#clickShowWeb_1_2").show();
+                }, function (e) {
+                    $("#clickShowWeb_1_2").hide();
+                });
+            });
+
+            $("#clickWeb_2").hover(function (e) {
+                $("#subHeader").css ("display", "block");
+                $("#clickShowWeb_2_2").css ("display", "flex");
+                $("#clickShowWeb_2_2").show ();
+            }, function(e) {
+                $("#clickShowWeb_2_2").hide();
+                $("#clickShowWeb_2_2").hover(function (e) {
+                    $("#clickShowWeb_2_2").show();
+                }, function (e) {
+                    $("#clickShowWeb_2_2").hide();
+                });
             });
         });
     </script>
