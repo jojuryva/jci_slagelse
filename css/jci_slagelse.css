@@ -44,13 +44,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-.textbox {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  padding-bottom: 40px; }
-
 .vi-tilbyder_knapper {
   display: none;
   /*Section med knapper er ikke synlig på mobil*/ }
@@ -64,13 +57,20 @@ img {
   border-radius: 50%;
   width: 60%; }
 
-.vi-tilbyder_generalt, .vi-tilbyder_kurser {
+#vi-tilbyder_generalt, #vi-tilbyder_kurser {
   background-color: lightblue;
   width: 100%;
   padding-top: 60px; }
 
-.vi-tilbyder_kurser {
+#vi-tilbyder_kurser {
   padding-top: 10px;
+  padding-bottom: 40px; }
+
+.textbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   padding-bottom: 40px; }
 
 #tiltop-btn {
@@ -113,24 +113,102 @@ img {
 
   .vi-tilbyder_knap1, .vi-tilbyder_knap2, .vi-tilbyder_knap3 {
     border-radius: 50%;
+    text-decoration: none;
     width: 25%;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    padding-top: 20%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding-top: 11%;
+    padding-bottom: 8%;
     background-color: #0097d7;
     color: white;
     text-align: center; }
+
+  .vi-tilbyder_knap1:hover, .vi-tilbyder_knap2:hover, .vi-tilbyder_knap3:hover {
+    opacity: 0.8; }
+
+  .vi-tilbyder_knaptekst {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 15pt;
+    bottom: 20px; }
 
   .vi-tilbyder_knap2 {
     background-color: #f37121; }
 
   .vi-tilbyder_knap3 {
-    background-color: #006088; }
+    background-color: #006088;
+    padding-top: 9%;
+    padding-bottom: 10%; }
 
-  .vi-tilbyder_generalt h1 {
-    display: none; } }
+  #vi-tilbyder_generalt h1 {
+    display: none; }
+
+  .vi-tilbyder_runde-billeder {
+    width: 50%; }
+
+  #vi-tilbyder_generalt, #vi-tilbyder_kurser {
+    padding-top: 30px; }
+
+  .textbox {
+    width: 60%; } }
 @media screen and (min-width: 992px) {
   h1 {
-    font-size: 75pt; } }
+    font-size: 75pt; }
+
+  h2 {
+    font-size: 30pt; }
+
+  p, li {
+    font-size: 12pt;
+    margin: 0;
+    padding: 0; }
+
+  .vi-tilbyder_knap1, .vi-tilbyder_knap2, .vi-tilbyder_knap3 {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-top: 10%;
+    padding-bottom: 8%; }
+
+  .vi-tilbyder_knaptekst {
+    font-size: 20pt; }
+
+  .vi-tilbyder_knap3 {
+    padding-top: 8%;
+    padding-bottom: 10%; }
+
+  #vi-tilbyder_generalt, #vi-tilbyder_uddannelser, #vi-tilbyder_kurser {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 40px 50px 40px; }
+
+  .vi-tilbyder_runde-billeder {
+    order: 2;
+    width: 40%;
+    height: 50%;
+    padding: 0;
+    margin-top: 0; }
+
+  .textbox {
+    order: 1;
+    width: 40%;
+    margin-top: 20px; }
+
+  #tiltop-btn {
+    display: none;
+    bottom: 30px;
+    right: 60px; } }
+@media screen and (min-width: 1200px) {
+  .vi-tilbyder_knap1, .vi-tilbyder_knap2, .vi-tilbyder_knap3 {
+    padding-top: 11%;
+    padding-bottom: 11%; }
+
+  .vi-tilbyder_knaptekst {
+    font-size: 26pt; }
+
+  .vi-tilbyder_knap3 {
+    padding-top: 9%;
+    padding-bottom: 9%; }
+
+  .textbox {
+    width: 35%; } }
 
 /*# sourceMappingURL=jci_slagelse.css.map */
