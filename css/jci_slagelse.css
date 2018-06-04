@@ -58,6 +58,11 @@ header {
       position: absolute;
       z-index: 100;
       margin: 7.5vh 0 0 -2.5vh; }
+      header #menu #navElements #click_1 {
+        background-color: #0097d7; }
+        header #menu #navElements #click_1:hover {
+          background-color: white;
+          color: #0097d7; }
       header #menu #navElements a {
         display: block;
         line-height: 7.5vh;
@@ -70,12 +75,14 @@ header {
         header #menu #navElements a:hover {
           background-color: white;
           color: #0097d7;
-          cursor: pointer;
-          border-bottom: solid white 2.5px; }
+          cursor: pointer; }
       header #menu #navElements #clickShow_1_2, header #menu #navElements #clickShow_2_2 {
         display: none; }
         header #menu #navElements #clickShow_1_2 a, header #menu #navElements #clickShow_2_2 a {
-          background-color: royalblue; }
+          background-color: #006088; }
+          header #menu #navElements #clickShow_1_2 a:hover, header #menu #navElements #clickShow_2_2 a:hover {
+            background-color: white;
+            color: #006088; }
 
 #header {
   background-color: rgba(0, 0, 0, 0.7); }
@@ -85,6 +92,11 @@ header {
 
 #some {
   line-height: 7.5vh; }
+  #some a {
+    text-decoration: none;
+    color: white; }
+    #some a:hover {
+      color: #0097d7; }
 
 #forside {
   height: 100vh;
@@ -93,65 +105,79 @@ header {
   background-position: center; }
   #forside #logo {
     width: 50vw;
+    max-width: 300px;
     margin: auto;
     padding: 25vh 0 0 0; }
+  #forside #tilbud_box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0097d7;
+    width: 66vw;
+    height: 7.5vh;
+    border-radius: 7.5vh;
+    max-width: 300px;
+    margin: 7.5vh auto;
+    cursor: pointer;
+    text-decoration: none; }
+    #forside #tilbud_box:hover {
+      background-color: #006088; }
+    #forside #tilbud_box p {
+      margin: 0 2vw 0 3vw;
+      line-height: 7.5vh;
+      font-size: 14px;
+      background: none;
+      border: none;
+      color: white;
+      max-width: 300px;
+      cursor: pointer;
+      text-align: center; }
+    #forside #tilbud_box #arrow_button {
+      height: 7.5vh;
+      width: 7.5vh;
+      background-color: #f37121;
+      border: none;
+      color: white;
+      border-radius: 7.5vh;
+      max-width: 300px;
+      cursor: pointer;
+      outline: none; }
+  #forside #om_jci {
+    margin-top: 35vh;
+    height: 5vh;
+    width: 100vw; }
 
-#om_jci {
-  height: 150vh;
-  margin: 10vh 2.5vw; }
-  #om_jci h1 {
+#om_jci_section {
+  height: auto;
+  margin: 5vh 2.5vw; }
+  #om_jci_section h1 {
+    font-size: 16px;
+    margin: 5vh 0;
     text-align: center; }
+  #om_jci_section article p {
+    margin: 5vh 2.5vw; }
+  #om_jci_section article ul {
+    margin: 5vh 2.5vw; }
+    #om_jci_section article ul li {
+      margin: 2.5vh; }
+  #om_jci_section article #front_flex {
+    display: none; }
 
 #particles-js {
-  background-color: #75c1e1;
+  background-color: #0097d7;
   height: 100vh;
   width: 100vw; }
 
-@media screen and (min-width: 568px) {
-  header {
-    height: 15vh; }
-    header #menu {
-      height: 15vh; }
-      header #menu #navMobile {
-        line-height: 7.5vh;
-        height: 7.5vh;
-        color: white; }
-        header #menu #navMobile #navBars {
-          cursor: pointer; }
-      header #menu #navWeb {
-        display: none; }
-      header #menu #navElements {
-        width: 100vw;
-        display: none;
-        position: absolute;
-        z-index: 100;
-        margin: 12.5vh 0 0 -2.5vh; }
-        header #menu #navElements a {
-          display: block;
-          line-height: 10vh;
-          height: 10vh;
-          text-align: center;
-          text-decoration: none;
-          background-color: #0097d7;
-          color: white;
-          font-size: 16px; }
-          header #menu #navElements a:hover {
-            background-color: white;
-            color: #0097d7;
-            cursor: pointer;
-            border-bottom: solid white 2.5px; }
-        header #menu #navElements #clickShow_1_2, header #menu #navElements #clickShow_2_2 {
-          display: none; }
-          header #menu #navElements #clickShow_1_2 a, header #menu #navElements #clickShow_2_2 a {
-            background-color: royalblue; } }
-@media screen and (min-width: 768px) {
-  header {
-    height: 15vh; }
-    header #menu {
-      height: 15vh; }
-      header #menu #navElements {
-        margin: 12.5vh 0 0 -2.5vh; } }
-@media screen and (min-width: 992px) {
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black; }
+  footer p {
+    margin: 3.5vh 2.5vw 0 0; }
+  footer #some {
+    margin: 2.5vh 0; }
+
+@media screen and (min-width: 1200px) {
   header {
     display: flex; }
     header #logoWeb {
@@ -165,15 +191,20 @@ header {
       header #menu #navWeb {
         display: flex;
         justify-content: space-between; }
-        header #menu #navWeb a, header #menu #navWeb #test {
+        header #menu #navWeb .onPage {
+          background-color: #0097d7; }
+          header #menu #navWeb .onPage:hover {
+            background-color: white;
+            color: #0097d7; }
+        header #menu #navWeb a {
           height: 10vh;
           line-height: 10vh;
           width: 14.5vw;
           text-align: center;
           text-decoration: none;
           color: white;
-          font-size: 24px; }
-          header #menu #navWeb a:hover, header #menu #navWeb #test:hover {
+          font-size: 20px; }
+          header #menu #navWeb a:hover {
             background-color: #0097d7;
             cursor: pointer; }
       header #menu #some {
@@ -183,7 +214,7 @@ header {
     display: none;
     top: 10vh; }
     #subHeader #clickShowWeb_1_2 {
-      background-color: #0097d7;
+      background-color: #006088;
       display: none; }
       #subHeader #clickShowWeb_1_2 a {
         height: 10vh;
@@ -192,13 +223,13 @@ header {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 20px; }
+        font-size: 16px; }
         #subHeader #clickShowWeb_1_2 a:hover {
           background-color: white;
-          color: #0097d7;
+          color: #006088;
           cursor: pointer; }
     #subHeader #clickShowWeb_2_2 {
-      background-color: #0097d7;
+      background-color: #006088;
       display: none; }
       #subHeader #clickShowWeb_2_2 a {
         height: 10vh;
@@ -207,13 +238,70 @@ header {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 20px; }
+        font-size: 16px; }
         #subHeader #clickShowWeb_2_2 a:hover {
           background-color: white;
-          color: #0097d7;
-          cursor: pointer; } }
-@media screen and (min-width: 1024px) {
-  #logoWeb {
-    margin: 1.5vh -2vw 1.5vh 2vw; } }
+          color: #006088;
+          cursor: pointer; }
+
+  #om_jci_section {
+    height: auto;
+    margin: 5vh 2.5vw; }
+    #om_jci_section h1 {
+      font-size: 24px;
+      margin: 5vh 0;
+      text-align: center; }
+    #om_jci_section article {
+      display: flex; }
+      #om_jci_section article #front_flex_text {
+        width: 50vw; }
+        #om_jci_section article #front_flex_text p {
+          margin: 5vh 2.5vw; }
+        #om_jci_section article #front_flex_text ul {
+          margin: 5vh 2.5vw; }
+          #om_jci_section article #front_flex_text ul li {
+            margin: 2.5vh; }
+      #om_jci_section article #front_flex {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-top: 2.5vh; }
+        #om_jci_section article #front_flex #front_box_1 {
+          background-color: #f37121;
+          color: white;
+          height: 60vh;
+          width: 60vh;
+          line-height: 60vh;
+          text-align: center;
+          border-radius: 50%;
+          margin-top: 2.5vh; }
+          #om_jci_section article #front_flex #front_box_1 p {
+            font-size: 24px;
+            margin: auto; }
+        #om_jci_section article #front_flex #front_box_2 {
+          background-color: #0097d7;
+          color: white;
+          height: 40vh;
+          width: 40vh;
+          line-height: 40vh;
+          text-align: center;
+          border-radius: 50%;
+          margin: -15vh 5vw 0 30vw; }
+          #om_jci_section article #front_flex #front_box_2 p {
+            font-size: 24px;
+            margin: auto; }
+        #om_jci_section article #front_flex #front_box_3 {
+          display: block;
+          background-color: #006088;
+          color: white;
+          height: 50vh;
+          width: 50vh;
+          line-height: 50vh;
+          text-align: center;
+          border-radius: 50%;
+          margin: -15vh 5vw 0 5vw; }
+          #om_jci_section article #front_flex #front_box_3 p {
+            font-size: 24px;
+            margin: auto; } }
 
 /*# sourceMappingURL=jci_slagelse.css.map */

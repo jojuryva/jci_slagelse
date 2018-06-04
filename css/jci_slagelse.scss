@@ -3,7 +3,8 @@
 // Alt der gælder for mobil og højere
 
 $blue: #0097d7;
-$lightblue: #75c1e1;
+$darkblue: #006088;
+$orange: #f37121;
 
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
@@ -84,6 +85,15 @@ header {
       z-index: 100;
       margin: 7.5vh 0 0 -2.5vh;
 
+      #click_1 {
+        background-color: $blue;
+
+        &:hover {
+          background-color: white;
+          color: $blue;
+        }
+      }
+
       a {
         display: block;
         line-height: 7.5vh;
@@ -98,14 +108,18 @@ header {
           background-color: white;
           color: $blue;
           cursor: pointer;
-          border-bottom: solid white 2.5px;
         }
       }
 
       #clickShow_1_2, #clickShow_2_2 {
         display: none;
         a {
-          background-color: royalblue;
+          background-color: $darkblue;
+
+          &:hover {
+            background-color: white;
+            color: $darkblue;
+          }
         }
       }
     }
@@ -122,6 +136,15 @@ header {
 
 #some {
   line-height: 7.5vh;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $blue;
+    }
+  }
 }
 
 #forside {
@@ -132,102 +155,125 @@ header {
 
   #logo {
     width: 50vw;
+    max-width: 300px;
     margin: auto;
     padding: 25vh 0 0 0;
+
+  }
+
+  #tilbud_box {
+    display: flex;
+    justify-content: space-between;
+    background-color: $blue;
+    width: 66vw;
+    height: 7.5vh;
+    border-radius: 7.5vh;
+    max-width: 300px;
+    margin: 7.5vh auto;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $darkblue;
+    }
+
+    p {
+      margin: 0 2vw 0 3vw;
+      line-height: 7.5vh;
+      font-size: 14px;
+      background: none;
+      border: none;
+      color: white;
+      max-width: 300px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    #arrow_button {
+      height: 7.5vh;
+      width: 7.5vh;
+      background-color: $orange;
+      border: none;
+      color: white;
+      border-radius: 7.5vh;
+      max-width: 300px;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  #om_jci {
+    margin-top: 35vh;
+    height: 5vh;
+    width: 100vw;
   }
 }
 
-#om_jci {
-  height: 150vh;
-  margin: 10vh 2.5vw;
+#om_jci_section {
+  height: auto;
+  margin: 5vh 2.5vw;
+
   h1 {
+    font-size: 16px;
+    margin: 5vh 0;
     text-align: center;
+  }
+
+  article {
+
+    p {
+      margin: 5vh 2.5vw;
+    }
+
+    ul {
+      margin: 5vh 2.5vw;
+
+      li {
+        margin: 2.5vh;
+      }
+    }
+
+    #front_flex {
+      display: none;
+    }
   }
 }
 
 #particles-js {
-  background-color: $lightblue;
+  background-color: $blue;
   height: 100vh;
   width: 100vw;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+
+  p {
+    margin: 3.5vh 2.5vw 0 0;
+  }
+
+  #some {
+    margin: 2.5vh 0;
+  }
+}
+
 @media screen and (min-width: 568px) {
   // Alt der ændres i tablet stående fra mobil
-
-  header {
-    height: 15vh;
-
-    #menu {
-      height: 15vh;
-
-      #navMobile {
-        line-height: 7.5vh;
-        height: 7.5vh;
-        color: white;
-
-        #navBars {
-          cursor: pointer;
-        }
-      }
-
-      #navWeb {
-        display: none;
-      }
-
-      #navElements {
-        width: 100vw;
-        display: none;
-        position: absolute;
-        z-index: 100;
-        margin: 12.5vh 0 0 -2.5vh;
-
-        a {
-          display: block;
-          line-height: 10vh;
-          height: 10vh;
-          text-align: center;
-          text-decoration: none;
-          background-color: $blue;
-          color: white;
-          font-size: 16px;
-
-          &:hover {
-            background-color: white;
-            color: $blue;
-            cursor: pointer;
-            border-bottom: solid white 2.5px;
-          }
-        }
-
-        #clickShow_1_2, #clickShow_2_2 {
-          display: none;
-          a {
-            background-color: royalblue;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
-
-  header {
-    height: 15vh;
-
-    #menu {
-      height: 15vh;
-
-      #navElements {
-        margin: 12.5vh 0 0 -2.5vh;
-      }
-    }
-  }
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+}
+
+@media screen and (min-width: 1200px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
   header {
     display: flex;
@@ -237,7 +283,6 @@ header {
       height: 7.5vh;
       margin: 1.5vh 2vw 1.5vh 2vw;
     }
-
     #menu {
       margin: 0;
 
@@ -249,14 +294,23 @@ header {
         display: flex;
         justify-content: space-between;
 
-        a, #test {
+        .onPage {
+          background-color: $blue;
+
+          &:hover {
+            background-color: white;
+            color: $blue;
+          }
+        }
+
+        a {
           height: 10vh;
           line-height: 10vh;
           width: 14.5vw;
           text-align: center;
           text-decoration: none;
           color: white;
-          font-size: 24px;
+          font-size: 20px;
 
           &:hover {
             background-color: $blue;
@@ -276,7 +330,7 @@ header {
     top: 10vh;
 
     #clickShowWeb_1_2 {
-      background-color: $blue;
+      background-color: $darkblue;
       display: none;
 
       a {
@@ -286,18 +340,18 @@ header {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 20px;
+        font-size: 16px;
 
         &:hover {
           background-color: white;
-          color: $blue;
+          color: $darkblue;
           cursor: pointer;
         }
       }
     }
 
     #clickShowWeb_2_2 {
-      background-color: $blue;
+      background-color: $darkblue;
       display: none;
 
       a {
@@ -307,27 +361,103 @@ header {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 20px;
+        font-size: 16px;
 
         &:hover {
           background-color: white;
-          color: $blue;
+          color: $darkblue;
           cursor: pointer;
         }
       }
     }
   }
-}
 
-@media screen and (min-width: 1024px) {
+  #om_jci_section {
+    height: auto;
+    margin: 5vh 2.5vw;
 
-  #logoWeb {
-    margin: 1.5vh -2vw 1.5vh 2vw;
+    h1 {
+      font-size: 24px;
+      margin: 5vh 0;
+      text-align: center;
+    }
+
+    article {
+      display: flex;
+
+      #front_flex_text {
+        width: 50vw;
+
+        p {
+          margin: 5vh 2.5vw;
+        }
+
+        ul {
+          margin: 5vh 2.5vw;
+
+          li {
+            margin: 2.5vh;
+          }
+        }
+      }
+
+      #front_flex {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-top: 2.5vh;
+
+        #front_box_1 {
+          background-color: $orange;
+          color: white;
+          height: 60vh;
+          width: 60vh;
+          line-height: 60vh;
+          text-align: center;
+          border-radius: 50%;
+          margin-top: 2.5vh;
+
+          p {
+            font-size: 24px;
+            margin: auto;
+          }
+        }
+
+        #front_box_2 {
+          background-color: $blue;
+          color: white;
+          height: 40vh;
+          width: 40vh;
+          line-height: 40vh;
+          text-align: center;
+          border-radius: 50%;
+          margin: -15vh 5vw 0 30vw;
+
+          p {
+            font-size: 24px;
+            margin: auto;
+          }
+        }
+
+        #front_box_3 {
+          display: block;
+          background-color: $darkblue;
+          color: white;
+          height: 50vh;
+          width: 50vh;
+          line-height: 50vh;
+          text-align: center;
+          border-radius: 50%;
+          margin: -15vh 5vw 0 5vw;
+
+          p {
+            font-size: 24px;
+            margin: auto;
+          }
+        }
+      }
+    }
   }
-}
-
-@media screen and (min-width: 1200px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 }
 
 @media print {

@@ -1,143 +1,225 @@
+<!-- Joachim har kodet dette -->
 <!DOCTYPE html>
 <!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
 <html lang="da">
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
-<head>
-    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
-    <meta charset="utf-8">
-    <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>JCI Slagelse</title>
-    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
-    <meta name="copyright" content="Information om copyright">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/jci_slagelse.css" rel="stylesheet" type="text/css">
-    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<!-- i <body> har man alt indhold på siden -->
-<body>
-    <header id="header">
-        <img id="logoWeb" src="images/logo_farve.png">
-        <div id="menu">
-            <nav id="navMobile">
-                <i id="navBars" class="fas fa-bars fa-2x"></i>
-            </nav>
-            <nav id="navWeb">
-                <a href="#" id="clickWeb_1">Om JCI</a>
-                <a href="#">Vi Tilbyder</a>
-                <a href="#" id="clickWeb_2">Events</a>
-                <a href="#">Grangia</a>
-                <a href="#">Kontakt</a>
-            </nav>
-            <nav id="navElements">
-                <a href="#" id="click_1">Om JCI</a>
-                <div id="clickShow_1_2">
-                    <a href="#">Medlemsskab</a>
-                    <a href="#">Hvem Er Vi?</a>
-                    <a href="#">Partnere</a>
+    <head>
+        <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+        <meta charset="utf-8">
+        <!-- Titel som ses oppe i browserens tab mv. -->
+        <title>JCI Slagelse</title>
+        <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <meta name="robots" content="All">
+        <meta name="author" content="Udgiver">
+        <meta name="copyright" content="Information om copyright">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+        <link href="css/jci_slagelse.css" rel="stylesheet" type="text/css">
+        <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <!-- i <body> har man alt indhold på siden -->
+    <body>
+        <header id="header">
+            <img id="logoWeb" src="images/logo_farve.png">
+            <div id="menu">
+                <nav id="navMobile">
+                    <i id="navBars" class="fas fa-bars fa-2x"></i>
+                </nav>
+                <nav id="navWeb">
+                    <a href="#om_jci" class="onPage" id="clickWeb_1">Om JCI</a>
+                    <a href="vi_tilbyder.html">Vi Tilbyder</a>
+                    <a href="#" id="clickWeb_2">Events</a>
+                    <a href="#">Grangia</a>
+                    <a href="#">Kontakt</a>
+                </nav>
+                <nav id="navElements">
+                    <a href="#om_jci" id="click_1">Om JCI</a>
+                    <div id="clickShow_1_2">
+                        <a href="#">Medlemsskab</a>
+                        <a href="#">Hvem Er Vi?</a>
+                        <a href="#">Partnere</a>
+                    </div>
+                    <a href="vi_tilbyder.html">Vi Tilbyder</a>
+                    <a href="#" id="click_2">Events</a>
+                    <div id="clickShow_2_2">
+                        <a href="#">Kalender</a>
+                        <a href="#">Konkurrencer</a>
+                        <a href="#">Kongresser</a>
+                        <a href="#">Projektarbejde</a>
+                    </div>
+                    <a href="#">Grangia</a>
+                    <a href="#">Kontakt</a>
+                </nav>
+                <div id="some">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
                 </div>
-                <a href="#">Vi Tilbyder</a>
-                <a href="#" id="click_2">Events</a>
-                <div id="clickShow_2_2">
-                    <a href="#">Kalender</a>
-                    <a href="#">Konkurrencer</a>
-                    <a href="#">Kongresser</a>
-                    <a href="#">Projektarbejde</a>
-                </div>
-                <a href="#">Grangia</a>
-                <a href="#">Kontakt</a>
-            </nav>
-            <div id="some">
-                <i class="fab fa-facebook-square fa-2x"></i>
-                <i class="fab fa-instagram fa-2x"></i>
-                <i class="fab fa-linkedin fa-2x"></i>
             </div>
-        </div>
-    </header>
-    <header id="subHeader">
-        <div id="clickShowWeb_1_2">
-            <a href="#">Medlemsskab</a>
-            <a href="#">Hvem Er Vi?</a>
-            <a href="#">Partnere</a>
-        </div>
-        <div id="clickShowWeb_2_2">
-            <a href="#">Kalender</a>
-            <a href="#">Konkurrencer</a>
-            <a href="#">Kongresser</a>
-            <a href="#">Projektarbejde</a>
-        </div>
-    </header>
-    <section id="forside">
-        <img id="logo" src="images/logo_hvid.png">
-    </section>
-    <section id="om_jci">
-        <h1>
-            Om JCI
-        </h1>
-    </section>
-    <section id="particles-js">
-    </section>
-    <section id="">
-    </section>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function (e) {
-            $("#navMobile").click(function (e) {
-                $("#navElements").slideToggle(300);
-            });
+        </header>
+        <header id="subHeader">
+            <div id="clickShowWeb_1_2">
+                <a href="#">Medlemsskab</a>
+                <a href="#">Hvem Er Vi?</a>
+                <a href="#">Partnere</a>
+            </div>
+            <div id="clickShowWeb_2_2">
+                <a href="#">Kalender</a>
+                <a href="#">Konkurrencer</a>
+                <a href="#">Kongresser</a>
+                <a href="#">Projektarbejde</a>
+            </div>
+        </header>
+        <section id="forside">
+            <img id="logo" src="images/logo_hvid.png">
+            <a href="vi_tilbyder.html" id="tilbud_box">
+                <p>
+                    Hvad kan vi tilbyde dig?
+                </p>
+                <button id="arrow_button">
+                    <i class="fas fa-angle-right fa-3x"></i>
+                </button>
+            </a>
+            <div id="om_jci"></div>
+        </section>
+        <section id="om_jci_section">
+            <h1>
+                Om JCI
+            </h1>
+            <article>
+                <div id="front_flex_text">
+                    <p>
+                        JCI (Junior Chamber International) er en global organisation,
+                        der består af frivillige unge i 20 til 30 års alderen,
+                        der ønsker at udvikle sig indenfor:
+                    </p>
+                    <ul>
+                        <li>Personal Development</li>
+                        <li>Business</li>
+                        <li>Community</li>
+                        <li>International</li>
+                    </ul>
 
-            $(window).resize(function (e) {
-                var width = $(window).width();
+                    <p>
+                        Vi giver unge en god mulighed for at forbedre deres kompetencer og erfaring,
+                        indenfor projektledelse. Man får nemlig en stor personlig udvikling,
+                        når man er en del af JCI. Udover dette, er opgaverne vi arbejder med,
+                        hvordan vi kan forbedre lokalsamfundet,
+                        så derfor får du også mulighed for at gøre din by til et bedre sted.
+                        Da dette er frivilligt arbejde for vores medlemmer, bestemmer man selvfølgelig selv,
+                        hvor aktiv man har lyst til være.
+                        JCI er overordnet det samme, uanset hvor man er medlem i Danmark.
+                        For at ensrette kommunikationen, opfordrer vi medlemmerne til at huske tre nøgleord:
+                        kvalitet, udvikling og ambition.
+                    </p>
+                    <ul>
+                        <li>
+                            Vi skal sørge for altid at tænke kvalitet ind i alt,
+                            vi foretager os. På denne måde fremstår vi mere professionelt,
+                            og vores medlemmer opnår mere udvikling.
+                        </li>
+                        <li>
+                            Vi skal altid tænke ambitiøst. Vi ønsker at udvikle os,
+                            og derfor er det vigtigt at vi kommunikere, hvilke mål vi satte os,
+                            inden vi gik i gang med den pågældende aktivitet eller projekt.
+                        </li>
+                        <li>
+                            JCI Slagelse blev grundlagt i 1964 og har i dag 32 medlemmer i afdelingen.
+                        </li>
+                    </ul>
+                    <p>
+                        Our vision: <i>To be the leading global network of young active citizens.</i>
+                    </p>
+                    <p>
+                        Our mission: <i>To provide development opportunities that empower young people to create positive change.</i>
+                    </p>
+                </div>
+                <div id="front_flex">
+                    <div id="front_box_1">
+                        <p>Kompetencer</p>
+                    </div>
+                    <div id="front_box_2">
+                        <p>Udvikling</p>
+                    </div>
+                    <div id="front_box_3">
+                        <p>Ambition</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="particles-js">
+        </section>
+        <section>
+        </section>
+        <footer>
+            <p>Følg os på</p>
+            <div id="some">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </footer>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (e) {
+                $("#navMobile").click(function (e) {
+                    $("#navElements").slideToggle(300);
+                });
 
-                if(width > 992) {
-                    $("#navElements").css("display", "none");
-                }
-            });
+                $(window).resize(function (e) {
+                    var width = $(window).width();
 
-            $("#click_1").click(function (e) {
-                $("#clickShow_1_2").slideToggle(500);
-                $("#clickShow_2_2").slideUp(500);
-            });
+                    if(width > 768) {
+                        $("#navElements").css("display", "none");
+                    }
 
-            $("#click_2").click(function (e) {
-                $("#clickShow_2_2").slideToggle(500);
-                $("#clickShow_1_2").slideUp(500);
-            });
+                    if(width > 0) {
+                        $("#subHeader").css("display", "none");
+                    }
+                });
 
-            $("#clickWeb_1").hover(function (e) {
-                $("#subHeader").css ("display", "block");
-                $("#clickShowWeb_1_2").css ("display", "flex");
-                $("#clickShowWeb_1_2").show ();
-            }, function(e) {
-                $("#clickShowWeb_1_2").hide();
-                $("#clickShowWeb_1_2").hover(function (e) {
-                    $("#clickShowWeb_1_2").show();
-                }, function (e) {
+                $("#click_1").click(function (e) {
+                    $("#clickShow_1_2").slideToggle(500);
+                    $("#clickShow_2_2").slideUp(500);
+                });
+
+                $("#click_2").click(function (e) {
+                    $("#clickShow_2_2").slideToggle(500);
+                    $("#clickShow_1_2").slideUp(500);
+                });
+
+                $("#clickWeb_1").hover(function (e) {
+                    $("#subHeader").css ("display", "block");
+                    $("#clickShowWeb_1_2").css ("display", "flex");
+                    $("#clickShowWeb_1_2").show ();
+                }, function(e) {
                     $("#clickShowWeb_1_2").hide();
+                    $("#clickShowWeb_1_2").hover(function (e) {
+                        $("#clickShowWeb_1_2").show();
+                    }, function (e) {
+                        $("#clickShowWeb_1_2").hide();
+                    });
                 });
-            });
 
-            $("#clickWeb_2").hover(function (e) {
-                $("#subHeader").css ("display", "block");
-                $("#clickShowWeb_2_2").css ("display", "flex");
-                $("#clickShowWeb_2_2").show ();
-            }, function(e) {
-                $("#clickShowWeb_2_2").hide();
-                $("#clickShowWeb_2_2").hover(function (e) {
-                    $("#clickShowWeb_2_2").show();
-                }, function (e) {
+                $("#clickWeb_2").hover(function (e) {
+                    $("#subHeader").css ("display", "block");
+                    $("#clickShowWeb_2_2").css ("display", "flex");
+                    $("#clickShowWeb_2_2").show ();
+                }, function(e) {
                     $("#clickShowWeb_2_2").hide();
+                    $("#clickShowWeb_2_2").hover(function (e) {
+                        $("#clickShowWeb_2_2").show();
+                    }, function (e) {
+                        $("#clickShowWeb_2_2").hide();
+                    });
                 });
             });
-        });
-    </script>
-</body>
+        </script>
+    </body>
 </html>
