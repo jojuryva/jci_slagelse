@@ -46,6 +46,8 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+// Joachim kode
+
 header {
   width: 100vw;
   height: 10vh;
@@ -134,7 +136,7 @@ header {
   display: none;
 }
 
-#some {
+.some {
   line-height: 7.5vh;
 
   a {
@@ -174,22 +176,27 @@ header {
     text-decoration: none;
 
     &:hover {
-      background-color: $darkblue;
+      background-color: white;
+
+      p {
+        color: $orange;
+      }
     }
 
     p {
       margin: 0 2vw 0 3vw;
       line-height: 7.5vh;
-      font-size: 14px;
+      font-size: 16px;
       background: none;
       border: none;
       color: white;
       max-width: 300px;
       cursor: pointer;
       text-align: center;
+
     }
 
-    #arrow_button {
+    button {
       height: 7.5vh;
       width: 7.5vh;
       background-color: $orange;
@@ -214,35 +221,179 @@ header {
   margin: 5vh 2.5vw;
 
   h1 {
-    font-size: 16px;
     margin: 5vh 0;
     text-align: center;
   }
 
   article {
+    display: block;
 
-    p {
-      margin: 5vh 2.5vw;
-    }
+    #front_flex_text {
+      width: 100vw;
 
-    ul {
-      margin: 5vh 2.5vw;
+      p {
+        margin: 5vh 2.5vw;
+      }
 
-      li {
-        margin: 2.5vh;
+      ul {
+        margin: 5vh 2.5vw;
+
+        li {
+          margin: 2.5vh;
+        }
       }
     }
 
     #front_flex {
       display: none;
+      #front_flex_1, #front_flex_2, #front_flex_3 {
+        display: none;
+      }
     }
   }
 }
 
-#particles-js {
+#medlem {
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin: 5vh;
+  }
+
+  #push_box {
+    height: 1vh;
+  }
+
+  #particles-js {
+    background-color: $darkblue;
+    height: 175vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+  }
+
+  article {
+    height: auto;
+
+    #medlem_flex_text {
+      margin: 5vw;
+
+      p {
+        color: white;
+      }
+
+      div {
+
+        #medlem_box {
+          display: flex;
+          justify-content: space-between;
+          background-color: $blue;
+          width: 50vw;
+          height: 7.5vh;
+          border-radius: 7.5vh;
+          max-width: 200px;
+          margin: 7.5vh auto;
+          cursor: pointer;
+          text-decoration: none;
+
+          &:hover {
+            background-color: white;
+
+            p {
+              color: $orange;
+            }
+          }
+
+          p {
+            margin: 0 2vw 0 3.5vw;
+            line-height: 7.5vh;
+            font-size: 16px;
+            background: none;
+            border: none;
+            color: white;
+            max-width: 200px;
+            cursor: pointer;
+            text-align: center;
+          }
+
+          button {
+            height: 7.5vh;
+            width: 7.5vh;
+            background-color: $orange;
+            border: none;
+            color: white;
+            border-radius: 7.5vh;
+            max-width: 200px;
+            cursor: pointer;
+            outline: none;
+          }
+        }
+      }
+    }
+
+    #medlem_box_2 {
+      background-color: $blue;
+      height: 50vw;
+      width: 100vw;
+      border-radius: 100vw 100vw 0 0;
+
+      p {
+        padding-top: 5vh;
+        text-align: center;
+        color: white;
+      }
+    }
+  }
+}
+
+#hvem_er_vi {
   background-color: $blue;
-  height: 100vh;
-  width: 100vw;
+  padding: 5vh;
+
+  #buttons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    margin: 2% 25% 0 25%;
+    text-align: center;
+
+    #slideshow {
+      margin: auto;
+      height: 300px;
+      width: 300px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      img {
+        border-radius: 300px;
+        height: 300px;
+        width: 300px;
+        position: relative;
+      }
+    }
+  }
+
+  .down:hover, .up:hover {
+    cursor: pointer;
+  }
+}
+
+#back_to_top {
+  background-color: $orange;
+  height: 7.5vh;
+  width: 7.5vh;
+  color: white;
+  border-radius: 7.5vh;
+  line-height: 9vh;
+  text-align: center;
+  position: fixed;
+  bottom: 4vh;
+  right: 5vw;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 footer {
@@ -252,24 +403,182 @@ footer {
   background-color: black;
 
   p {
-    margin: 3.5vh 2.5vw 0 0;
+    margin: 5vh 2.5vw 0 0;
   }
 
-  #some {
-    margin: 2.5vh 0;
+  .some {
+    margin: 4vh 0;
   }
-}
-
-@media screen and (min-width: 568px) {
-  // Alt der ændres i tablet stående fra mobil
 }
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+  #medlem {
+
+    #particles-js {
+      height: 100vh;
+    }
+
+    article {
+
+      #medlem_box_2 {
+        background-color: $blue;
+        height: 50vw;
+        width: 100vw;
+        border-radius: 100vw 100vw 0 0;
+
+        p {
+          font-size: 24px;
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  #om_jci_section {
+
+    article {
+      display: flex;
+
+      #front_flex_text {
+        width: 50vw;
+
+        p {
+          margin: 5vh 2.5vw;
+        }
+
+        ul {
+          margin: 5vh 2.5vw;
+
+          li {
+            margin: 2.5vh;
+          }
+        }
+      }
+
+      #front_flex {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-top: 2.5vh;
+
+        #front_box_1 {
+          display: block;
+          background-color: $orange;
+          color: white;
+          height: 60vh;
+          width: 60vh;
+          line-height: 60vh;
+          text-align: center;
+          border-radius: 50%;
+          margin-top: 2.5vh;
+
+          p {
+            font-size: 24px;
+            margin: auto;
+          }
+        }
+
+        #front_box_2 {
+          display: block;
+          background-color: $blue;
+          color: white;
+          height: 40vh;
+          width: 40vh;
+          line-height: 40vh;
+          text-align: center;
+          border-radius: 50%;
+          margin: -15vh 5vw 0 30vw;
+
+          p {
+            font-size: 24px;
+            margin: auto;
+          }
+        }
+
+        #front_box_3 {
+          display: block;
+          background-color: $darkblue;
+          color: white;
+          height: 50vh;
+          width: 50vh;
+          line-height: 50vh;
+          text-align: center;
+          border-radius: 50%;
+          margin: -15vh 5vw 0 5vw;
+
+          p {
+            font-size: 24px;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+
+  #medlem {
+
+    #particles-js {
+      height: 110vh;
+    }
+
+    article {
+      display: flex;
+
+      #medlem_flex_text {
+        width: 50vw;
+
+        div {
+
+          #medlem_box {
+
+            p {
+              margin: 0 1vw 0 2vw;
+              line-height: 7.5vh;
+              font-size: 16px;
+              background: none;
+              border: none;
+              color: white;
+              max-width: 200px;
+              cursor: pointer;
+            }
+
+            button {
+              height: 7.5vh;
+              width: 7.5vh;
+              background-color: $orange;
+              border: none;
+              color: white;
+              border-radius: 7.5vh;
+              max-width: 200px;
+              cursor: pointer;
+              outline: none;
+            }
+          }
+        }
+      }
+
+      #medlem_box_2 {
+        background-color: $blue;
+        height: 30vw;
+        width: 30vw;
+        border-radius: 30vw;
+
+        p {
+          margin: 5vh;
+          font-size: 24px;
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -319,7 +628,7 @@ footer {
         }
       }
 
-      #some {
+      .some {
         margin: 2vh 0 0 2.5vw;
       }
     }
@@ -372,89 +681,53 @@ footer {
     }
   }
 
-  #om_jci_section {
-    height: auto;
-    margin: 5vh 2.5vw;
+  #tilbud_box {
+    display: flex;
+    justify-content: space-between;
+    background-color: $blue;
+    width: 66vw;
+    height: 7.5vh;
+    border-radius: 7.5vh;
+    max-width: 300px;
+    margin: 7.5vh auto;
+    cursor: pointer;
+    text-decoration: none;
 
-    h1 {
-      font-size: 24px;
-      margin: 5vh 0;
+    &:hover {
+      background-color: $darkblue;
+    }
+
+    p {
+      margin: 0 2vw 0 3vw;
+      line-height: 7.5vh;
+      font-size: 14px;
+      background: none;
+      border: none;
+      color: white;
+      max-width: 300px;
+      cursor: pointer;
       text-align: center;
     }
 
-    article {
-      display: flex;
+    #arrow_button {
+      height: 7.5vh;
+      width: 7.5vh;
+      background-color: $orange;
+      border: none;
+      color: white;
+      border-radius: 7.5vh;
+      max-width: 300px;
+      cursor: pointer;
+      outline: none;
+    }
 
-      #front_flex_text {
-        width: 50vw;
+    #om_jci_section {
+      height: auto;
+      margin: 5vh 2.5vw;
 
-        p {
-          margin: 5vh 2.5vw;
-        }
-
-        ul {
-          margin: 5vh 2.5vw;
-
-          li {
-            margin: 2.5vh;
-          }
-        }
-      }
-
-      #front_flex {
-        display: flex;
-        flex-direction: column;
-        width: 50vw;
-        margin-top: 2.5vh;
-
-        #front_box_1 {
-          background-color: $orange;
-          color: white;
-          height: 60vh;
-          width: 60vh;
-          line-height: 60vh;
-          text-align: center;
-          border-radius: 50%;
-          margin-top: 2.5vh;
-
-          p {
-            font-size: 24px;
-            margin: auto;
-          }
-        }
-
-        #front_box_2 {
-          background-color: $blue;
-          color: white;
-          height: 40vh;
-          width: 40vh;
-          line-height: 40vh;
-          text-align: center;
-          border-radius: 50%;
-          margin: -15vh 5vw 0 30vw;
-
-          p {
-            font-size: 24px;
-            margin: auto;
-          }
-        }
-
-        #front_box_3 {
-          display: block;
-          background-color: $darkblue;
-          color: white;
-          height: 50vh;
-          width: 50vh;
-          line-height: 50vh;
-          text-align: center;
-          border-radius: 50%;
-          margin: -15vh 5vw 0 5vw;
-
-          p {
-            font-size: 24px;
-            margin: auto;
-          }
-        }
+      h1 {
+        margin: 5vh 0;
+        text-align: center;
       }
     }
   }

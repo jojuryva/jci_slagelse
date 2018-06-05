@@ -54,7 +54,7 @@
                     <a href="#">Grangia</a>
                     <a href="#">Kontakt</a>
                 </nav>
-                <div id="some">
+                <div class="some">
                     <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
                     <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
                     <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
@@ -80,7 +80,7 @@
                 <p>
                     Hvad kan vi tilbyde dig?
                 </p>
-                <button id="arrow_button">
+                <button>
                     <i class="fas fa-angle-right fa-3x"></i>
                 </button>
             </a>
@@ -151,13 +151,82 @@
                 </div>
             </article>
         </section>
-        <section id="particles-js">
+        <section id="medlem">
+            <div id="particles-js"></div>
+            <div id="push_box"></div>
+            <h1>
+                Medlemskab
+            </h1>
+            <article>
+                <div id="medlem_flex_text">
+                    <p>
+                        Vi ønsker hos JCI Slagelse at få flere medlemmer,
+                        men ønsker også at alle vores medlemmer er engageret og deler vores interessepunkter.
+                        <br>
+                        <br>
+                        Vi har hos JCI et indmeldingsgebyr på 1000 kr. som du kan bruge på at deltage i
+                        forskellige arrangementer eller trainings indenfor dit første medlemsår.
+                        <br>
+                        <br>
+                        Prisen for et medlemskab ligger på 1500 kr. pr. halvår.
+                        Som studerende får du studierabat, og der er prisen 995 kr. pr halvår.
+                        <br>
+                        <br>
+                        For at blive medlem aftaler du i fællesskab med os, 2-3 møder eller arrangementer
+                        du kan deltage i, for at sikre at du stadig herefter har interesse for vores organisation
+                        og frivilligt arbejde. Hvis interessen forbliver, klare vores medlemsansvarlige indmeldingen
+                        sammen med dig.
+                    </p>
+                    <div>
+                        <a href="kontakt.html" id="medlem_box">
+                            <p>
+                                Bliv medlem
+                            </p>
+                            <button id="arrow_button">
+                                <i class="fas fa-angle-right fa-3x"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div id="medlem_box_2">
+                    <p>
+                        Pris
+                        <br>
+                        1000,- i oprettelse
+                        <br>
+                        1500,- pr. halvår
+                        <br>
+                        <br>
+                        Pris for studerende
+                        <br>
+                        995,- pr. halvår
+                    </p>
+                </div>
+            </article>
         </section>
-        <section>
+        <section id="hvem_er_vi">
+            <div id="buttons">
+                <span class="down">
+                    <i class="fas fa-angle-left fa-2x"></i>
+                </span>
+                <div id="slideshow">
+                    <img src="images/bestyrelse_caroline.jpg">
+                    <img src="images/bestyrelse_mie.jpg">
+                    <img src="images/bestyrelse_anna.jpg">
+                    <img src="images/bestyrelse_lasse.jpg">
+                    <img src="images/bestyrelse_kamilla.jpg">
+                </div>
+                <span class="up">
+                    <i class="fas fa-angle-right fa-2x"></i>
+                </span>
+            </div>
         </section>
+        <div id="back_to_top">
+            <i class="fas fa-angle-up fa-2x"></i>
+        </div>
         <footer>
             <p>Følg os på</p>
-            <div id="some">
+            <div class="some">
                 <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
                 <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
@@ -218,6 +287,39 @@
                     }, function (e) {
                         $("#clickShowWeb_2_2").hide();
                     });
+                });
+
+                var position = 0;
+                var imageWidth = 300;
+                var countImage = $("#slideshow img").length;
+
+                $(".down").click(function (e) {
+                    if (-(imageHeight * countImage - imageWidth) == position) {
+                        position = 0;
+                    }   else {
+                        position = position - imageWidth;
+                    }
+
+                    $("#slideshow img").animate({
+                        right: position+"px"
+                    }, 1000);
+                });
+
+                $(".up").click(function (e) {
+                    if (position == 0) {
+                        position = -(imageWidth * countImage - imageWidth);
+                    }   else {
+                        position = position + imageWidth;
+                    }
+
+                    $("#slideshow img").animate({
+                        right: position+"px"
+                    }, 1000);
+                });
+
+                $("#back_to_top").click(function(){
+                    $("html, body").animate({ scrollTop: 0 }, 600);
+                    return false;
                 });
             });
         </script>
