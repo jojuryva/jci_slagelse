@@ -21,7 +21,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
+}
+
+h1 {
   font-weight: bold;
+}
+
+h3 {
+  font-weight: normal;
 }
 
 ul, ol {
@@ -104,7 +111,7 @@ header {
         text-decoration: none;
         background-color: $blue;
         color: white;
-        font-size: 16px;
+        font-size: 14px;
 
         &:hover {
           background-color: white;
@@ -184,15 +191,12 @@ header {
     }
 
     p {
-      margin: 0 2vw 0 3vw;
+      margin: 0 0 0 2vw;
       line-height: 7.5vh;
-      font-size: 16px;
-      background: none;
-      border: none;
+      font-size: 14px;
       color: white;
       max-width: 300px;
       cursor: pointer;
-      text-align: center;
 
     }
 
@@ -217,6 +221,7 @@ header {
 }
 
 #om_jci_section {
+  background-color: white;
   height: auto;
   margin: 5vh 2.5vw;
 
@@ -251,6 +256,11 @@ header {
       }
     }
   }
+
+  #medlem_section {
+    margin-top: 5vh;
+    width: 100vw;
+  }
 }
 
 #medlem {
@@ -267,7 +277,7 @@ header {
 
   #particles-js {
     background-color: $darkblue;
-    height: 175vh;
+    height: 500vh;
     width: 100vw;
     position: absolute;
     z-index: -1;
@@ -308,9 +318,7 @@ header {
           p {
             margin: 0 2vw 0 3.5vw;
             line-height: 7.5vh;
-            font-size: 16px;
-            background: none;
-            border: none;
+            font-size: 14px;
             color: white;
             max-width: 200px;
             cursor: pointer;
@@ -348,34 +356,45 @@ header {
 }
 
 #hvem_er_vi {
-  background-color: $blue;
+  background-color: white;
   padding: 5vh;
+  text-align: center;
 
-  #buttons {
-    display: flex;
-    justify-content: space-around;
-    font-size: 24px;
-    margin: 2% 25% 0 25%;
-    text-align: center;
+  #hvem_er_vi_flex_1, #hvem_er_vi_flex_2 {
 
-    #slideshow {
-      margin: auto;
-      height: 300px;
-      width: 300px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      img {
-        border-radius: 300px;
-        height: 300px;
-        width: 300px;
-        position: relative;
-      }
+    div {
+      margin: 0 5vw;
     }
   }
 
-  .down:hover, .up:hover {
-    cursor: pointer;
+  img {
+    height: 150px;
+    width: 150px;
+    margin: 5vh auto;
+    border-radius: 150px;
+  }
+}
+
+#partners {
+  background-color: transparent;
+
+  h1 {
+    text-align: center;
+    color: white;
+  }
+
+  #dit_slagelse {
+
+
+    &:hover {
+    }
+  }
+
+  #dit_slagelse {
+
+
+    &:hover {
+    }
   }
 }
 
@@ -417,7 +436,7 @@ footer {
   #medlem {
 
     #particles-js {
-      height: 100vh;
+      height: 150vh;
     }
 
     article {
@@ -433,6 +452,22 @@ footer {
           text-align: center;
           color: white;
         }
+      }
+    }
+  }
+
+  #hvem_er_vi {
+
+    #hvem_er_vi_mobil_box {
+      display: none;
+    }
+
+    #hvem_er_vi_flex_1, #hvem_er_vi_flex_2 {
+      display: flex;
+      justify-content: center;
+
+      div {
+        margin: 0 5vh;
       }
     }
   }
@@ -541,9 +576,7 @@ footer {
             p {
               margin: 0 1vw 0 2vw;
               line-height: 7.5vh;
-              font-size: 16px;
-              background: none;
-              border: none;
+              font-size: 14px;
               color: white;
               max-width: 200px;
               cursor: pointer;
@@ -649,7 +682,7 @@ footer {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 16px;
+        font-size: 14px;
 
         &:hover {
           background-color: white;
@@ -670,7 +703,7 @@ footer {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 16px;
+        font-size: 14px;
 
         &:hover {
           background-color: white;
@@ -701,8 +734,6 @@ footer {
       margin: 0 2vw 0 3vw;
       line-height: 7.5vh;
       font-size: 14px;
-      background: none;
-      border: none;
       color: white;
       max-width: 300px;
       cursor: pointer;

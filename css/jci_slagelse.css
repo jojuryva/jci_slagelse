@@ -10,8 +10,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  padding: 0;
+  padding: 0; }
+
+h1 {
   font-weight: bold; }
+
+h3 {
+  font-weight: normal; }
 
 ul, ol {
   margin: 0;
@@ -71,7 +76,7 @@ header {
         text-decoration: none;
         background-color: #0097d7;
         color: white;
-        font-size: 16px; }
+        font-size: 14px; }
         header #menu #navElements a:hover {
           background-color: white;
           color: #0097d7;
@@ -124,15 +129,12 @@ header {
       #forside #tilbud_box:hover p {
         color: #f37121; }
     #forside #tilbud_box p {
-      margin: 0 2vw 0 3vw;
+      margin: 0 0 0 2vw;
       line-height: 7.5vh;
-      font-size: 16px;
-      background: none;
-      border: none;
+      font-size: 14px;
       color: white;
       max-width: 300px;
-      cursor: pointer;
-      text-align: center; }
+      cursor: pointer; }
     #forside #tilbud_box button {
       height: 7.5vh;
       width: 7.5vh;
@@ -149,6 +151,7 @@ header {
     width: 100vw; }
 
 #om_jci_section {
+  background-color: white;
   height: auto;
   margin: 5vh 2.5vw; }
   #om_jci_section h1 {
@@ -168,6 +171,9 @@ header {
       display: none; }
       #om_jci_section article #front_flex #front_flex_1, #om_jci_section article #front_flex #front_flex_2, #om_jci_section article #front_flex #front_flex_3 {
         display: none; }
+  #om_jci_section #medlem_section {
+    margin-top: 5vh;
+    width: 100vw; }
 
 #medlem h1 {
   color: white;
@@ -177,7 +183,7 @@ header {
   height: 1vh; }
 #medlem #particles-js {
   background-color: #006088;
-  height: 175vh;
+  height: 500vh;
   width: 100vw;
   position: absolute;
   z-index: -1; }
@@ -205,9 +211,7 @@ header {
       #medlem article #medlem_flex_text div #medlem_box p {
         margin: 0 2vw 0 3.5vw;
         line-height: 7.5vh;
-        font-size: 16px;
-        background: none;
-        border: none;
+        font-size: 14px;
         color: white;
         max-width: 200px;
         cursor: pointer;
@@ -233,28 +237,22 @@ header {
       color: white; }
 
 #hvem_er_vi {
-  background-color: #0097d7;
-  padding: 5vh; }
-  #hvem_er_vi #buttons {
-    display: flex;
-    justify-content: space-around;
-    font-size: 24px;
-    margin: 2% 25% 0 25%;
-    text-align: center; }
-    #hvem_er_vi #buttons #slideshow {
-      margin: auto;
-      height: 300px;
-      width: 300px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column; }
-      #hvem_er_vi #buttons #slideshow img {
-        border-radius: 300px;
-        height: 300px;
-        width: 300px;
-        position: relative; }
-  #hvem_er_vi .down:hover, #hvem_er_vi .up:hover {
-    cursor: pointer; }
+  background-color: white;
+  padding: 5vh;
+  text-align: center; }
+  #hvem_er_vi #hvem_er_vi_flex_1 div, #hvem_er_vi #hvem_er_vi_flex_2 div {
+    margin: 0 5vw; }
+  #hvem_er_vi img {
+    height: 150px;
+    width: 150px;
+    margin: 5vh auto;
+    border-radius: 150px; }
+
+#partners {
+  background-color: transparent; }
+  #partners h1 {
+    text-align: center;
+    color: white; }
 
 #back_to_top {
   background-color: #f37121;
@@ -282,7 +280,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   #medlem #particles-js {
-    height: 100vh; }
+    height: 150vh; }
   #medlem article #medlem_box_2 {
     background-color: #0097d7;
     height: 50vw;
@@ -291,7 +289,15 @@ footer {
     #medlem article #medlem_box_2 p {
       font-size: 24px;
       text-align: center;
-      color: white; } }
+      color: white; }
+
+  #hvem_er_vi #hvem_er_vi_mobil_box {
+    display: none; }
+  #hvem_er_vi #hvem_er_vi_flex_1, #hvem_er_vi #hvem_er_vi_flex_2 {
+    display: flex;
+    justify-content: center; }
+    #hvem_er_vi #hvem_er_vi_flex_1 div, #hvem_er_vi #hvem_er_vi_flex_2 div {
+      margin: 0 5vh; } }
 @media screen and (min-width: 992px) {
   #om_jci_section article {
     display: flex; }
@@ -357,9 +363,7 @@ footer {
       #medlem article #medlem_flex_text div #medlem_box p {
         margin: 0 1vw 0 2vw;
         line-height: 7.5vh;
-        font-size: 16px;
-        background: none;
-        border: none;
+        font-size: 14px;
         color: white;
         max-width: 200px;
         cursor: pointer; }
@@ -429,7 +433,7 @@ footer {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 16px; }
+        font-size: 14px; }
         #subHeader #clickShowWeb_1_2 a:hover {
           background-color: white;
           color: #006088;
@@ -444,7 +448,7 @@ footer {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 16px; }
+        font-size: 14px; }
         #subHeader #clickShowWeb_2_2 a:hover {
           background-color: white;
           color: #006088;
@@ -467,8 +471,6 @@ footer {
       margin: 0 2vw 0 3vw;
       line-height: 7.5vh;
       font-size: 14px;
-      background: none;
-      border: none;
       color: white;
       max-width: 300px;
       cursor: pointer;
