@@ -26,4 +26,104 @@ img {
   max-width: 100%;
   height: auto; }
 
+h1 {
+  font-family: 'Open Sans', Arial Narrow;
+  text-align: center;
+  font-size: 50px; }
+
+.overskriftmob {
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Open Sans', Arial Narrow; }
+
+.tekstto {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
+
+aside {
+  display: flex;
+  position: relative; }
+
+.koncontainerweb {
+  display: none; }
+
+.overskriftweb {
+  display: none; }
+
+.inputfarve {
+  border: solid #0097d7;
+  border-radius: 3px; }
+
+.tekstilbokse {
+  display: none; }
+
+.booking {
+  width: 100%;
+  height: 100%; }
+
+textarea {
+  resize: none; }
+
+.billede {
+  display: none; }
+
+.billedetekst {
+  display: none; }
+
+.koncontainermob {
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .koncontainermob {
+    display: none; }
+
+  .overskriftmob {
+    display: none; }
+
+  .billede {
+    display: block; }
+
+  .tekstilbokse {
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Open Sans', Arial Narrow;
+    display: block;
+    margin-left: 15%; }
+
+  .overskriftweb {
+    display: block;
+    font-size: 18px;
+    font-family: 'Open Sans', Arial Narrow;
+    text-align: center; }
+
+  .koncontainerweb {
+    display: block;
+    margin-left: 15%; }
+
+  h2 {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Open Sans', Arial Narrow; }
+
+  .billede img {
+    width: 30%; }
+
+  .billede {
+    margin-top: 65px; }
+
+  textarea {
+    resize: none; }
+
+  .booking {
+    width: 100%; }
+
+  .billedetekst {
+    display: block;
+    width: 30%; }
+    .billedetekst p {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; } }
+
 /*# sourceMappingURL=jci_slagelse.css.map */
