@@ -350,6 +350,7 @@ footer {
         width: 200px; }
 
   .vi-tilbyder_knapper {
+    height: 100vh;
     display: block;
     background-color: white;
     padding-top: 15vh; }
@@ -357,8 +358,7 @@ footer {
       display: flex;
       justify-content: space-around;
       width: 90%;
-      margin-left: auto;
-      margin-right: auto; }
+      margin: 15vh auto; }
       .vi-tilbyder_knapper .vi-tilbyder_flex .vi-tilbyder_knap1 {
         border-radius: 50%;
         text-decoration: none;
@@ -410,22 +410,67 @@ footer {
   .textbox {
     width: 75%; } }
 @media screen and (min-width: 992px) {
-  #medlem article #medlem_flex_text div #medlem_box p {
-    line-height: 7.5vh;
-    font-size: 14px;
-    color: white;
-    max-width: 300px;
-    cursor: pointer; }
-  #medlem article #medlem_flex_text div #medlem_box button {
+  #medlem article #medlem_flex_text div #medlem_box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0097d7;
+    width: 66vw;
     height: 7.5vh;
-    width: 7.5vh;
-    background-color: #f37121;
-    border: none;
-    color: white;
-    border-radius: 50%;
+    border-radius: 7.5vh;
     max-width: 300px;
+    margin: 7.5vh auto;
     cursor: pointer;
-    outline: none; } }
+    text-decoration: none; }
+    #medlem article #medlem_flex_text div #medlem_box:hover {
+      background-color: white; }
+      #medlem article #medlem_flex_text div #medlem_box:hover p {
+        color: #f37121; }
+    #medlem article #medlem_flex_text div #medlem_box p {
+      margin-left: 2vw;
+      line-height: 7.5vh;
+      font-size: 14px;
+      color: white;
+      max-width: 300px;
+      cursor: pointer; }
+    #medlem article #medlem_flex_text div #medlem_box button {
+      height: 7.5vh;
+      width: 7.5vh;
+      background-color: #f37121;
+      border: none;
+      color: white;
+      border-radius: 7.5vh;
+      max-width: 300px;
+      cursor: pointer;
+      outline: none; }
+
+  .vi-tilbyder_knaptekst {
+    font-size: 20px; }
+
+  #vi-tilbyder_generalt, #vi-tilbyder_uddannelser, #vi-tilbyder_kurser {
+    display: flex;
+    justify-content: space-around; }
+
+  #vi-tilbyder_generalt {
+    padding-top: 0; }
+    #vi-tilbyder_generalt img {
+      margin-top: 20vh; }
+
+  #vi-tilbyder_uddannelser, #vi-tilbyder_kurser {
+    padding-top: 0; }
+    #vi-tilbyder_uddannelser img, #vi-tilbyder_kurser img {
+      margin-top: 10vh; }
+
+  .vi-tilbyder_runde-billeder {
+    order: 2;
+    width: 40%;
+    height: 50%;
+    padding: 0;
+    margin-top: 0; }
+
+  .textbox {
+    order: 1;
+    width: 40%;
+    margin-top: 20px; } }
 @media screen and (min-width: 1200px) {
   header {
     display: flex; }

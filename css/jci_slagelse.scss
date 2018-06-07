@@ -512,6 +512,7 @@ footer {
   // Sabine - Vi Tilbyder Kode Start ------------------
 
   .vi-tilbyder_knapper {
+    height: 100vh;
     display: block;
     background-color: white;
     padding-top: 15vh;
@@ -520,8 +521,7 @@ footer {
       display: flex;
       justify-content: space-around;
       width: 90%;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 15vh auto;
 
       .vi-tilbyder_knap1 {
         @include tilbyder-box;
@@ -590,29 +590,53 @@ footer {
 
           #medlem_box {
 
-            p {
-              line-height: 7.5vh;
-              font-size: 14px;
-              color: white;
-              max-width: 300px;
-              cursor: pointer;
-            }
-
-            button {
-              height: 7.5vh;
-              width: 7.5vh;
-              background-color: $orange;
-              border: none;
-              color: white;
-              border-radius: 50%;
-              max-width: 300px;
-              cursor: pointer;
-              outline: none;
-            }
+            @include button;
           }
         }
       }
     }
+  }
+
+
+  .vi-tilbyder_knaptekst {
+    font-size: 20px;
+  }
+
+  #vi-tilbyder_generalt, #vi-tilbyder_uddannelser, #vi-tilbyder_kurser {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #vi-tilbyder_generalt {
+    padding-top: 0;
+
+    img {
+      margin-top: 20vh;
+    }
+  }
+
+  #vi-tilbyder_uddannelser, #vi-tilbyder_kurser {
+    padding-top: 0;
+
+    img {
+      margin-top: 10vh;
+    }
+  }
+
+
+
+  .vi-tilbyder_runde-billeder {
+    order: 2;
+    width: 40%;
+    height: 50%;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .textbox {
+    order: 1;
+    width: 40%;
+    margin-top: 20px;
   }
 }
 
