@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -15,7 +14,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; }
 
 h1 {
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 h2 {
   text-align: center;
@@ -113,14 +113,13 @@ header {
 
 #forside {
   height: 100vh;
-  background-image: url("../images/forside.jpg");
-  background-size: cover;
-  background-position: center; }
+  background: url("../images/forside.jpg") no-repeat center;
+  background-size: cover; }
   #forside #logo {
     width: 50vw;
     max-width: 300px;
     margin: auto;
-    padding: 25vh 0 0 0; }
+    padding-top: 25vh; }
   #forside #tilbud_box {
     display: flex;
     justify-content: space-between;
@@ -137,7 +136,7 @@ header {
       #forside #tilbud_box:hover p {
         color: #f37121; }
     #forside #tilbud_box p {
-      margin: 0 0 0 2vw;
+      margin-left: 2vw;
       line-height: 7.5vh;
       font-size: 14px;
       color: white;
@@ -200,7 +199,7 @@ header {
         display: flex;
         justify-content: space-between;
         background-color: #0097d7;
-        width: 50vw;
+        width: 66vw;
         height: 7.5vh;
         border-radius: 7.5vh;
         max-width: 300px;
@@ -212,13 +211,12 @@ header {
           #medlem article #medlem_flex_text div #medlem_box:hover p {
             color: #f37121; }
         #medlem article #medlem_flex_text div #medlem_box p {
-          margin: 0 2vw 0 3.5vw;
+          margin-left: 2vw;
           line-height: 7.5vh;
           font-size: 14px;
           color: white;
           max-width: 300px;
-          cursor: pointer;
-          text-align: center; }
+          cursor: pointer; }
         #medlem article #medlem_flex_text div #medlem_box button {
           height: 7.5vh;
           width: 7.5vh;
@@ -226,7 +224,7 @@ header {
           border: none;
           color: white;
           border-radius: 7.5vh;
-          max-width: 200px;
+          max-width: 300px;
           cursor: pointer;
           outline: none; }
     #medlem article #medlem_box_2 {
@@ -297,24 +295,23 @@ footer {
     line-height: 0; }
 
 .vi-tilbyder_knapper {
-  display: none;
-  /*Section med knapper er ikke synlig på mobil*/ }
+  display: none; }
 
 .vi-tilbyder_runde-billeder {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 30px auto;
   border-radius: 50%;
-  width: 60%; }
+  width: 50%; }
+
+.textbox {
+  margin: auto;
+  width: 80%;
+  padding-bottom: 40px; }
 
 #vi-tilbyder_generalt, #vi-tilbyder_kurser {
   color: white;
   width: 100%;
   padding-top: 15vh; }
-  #vi-tilbyder_generalt h1, #vi-tilbyder_kurser h1 {
-    text-align: center; }
   #vi-tilbyder_generalt #particles-js, #vi-tilbyder_kurser #particles-js {
     background-color: #006088;
     height: 100vh;
@@ -329,13 +326,6 @@ footer {
 
 #vi-tilbyder_kurser {
   padding-top: 10px;
-  padding-bottom: 40px; }
-
-.textbox {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
   padding-bottom: 40px; }
 
 @media screen and (min-width: 768px) {
@@ -357,7 +347,68 @@ footer {
       #hvem_er_vi #hvem_er_vi_flex_1 div img, #hvem_er_vi #hvem_er_vi_flex_2 div img {
         margin: 2.5vw; }
       #hvem_er_vi #hvem_er_vi_flex_1 div p, #hvem_er_vi #hvem_er_vi_flex_2 div p {
-        width: 200px; } }
+        width: 200px; }
+
+  .vi-tilbyder_knapper {
+    display: block;
+    background-color: white;
+    padding-top: 15vh; }
+    .vi-tilbyder_knapper .vi-tilbyder_flex {
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      .vi-tilbyder_knapper .vi-tilbyder_flex .vi-tilbyder_knap1 {
+        border-radius: 50%;
+        text-decoration: none;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        color: white;
+        text-align: center;
+        background-color: #0097d7;
+        margin: 5vh 0; }
+        .vi-tilbyder_knapper .vi-tilbyder_flex .vi-tilbyder_knap1:hover {
+          opacity: 0.8; }
+      .vi-tilbyder_knapper .vi-tilbyder_flex .vi-tilbyder_knap2 {
+        border-radius: 50%;
+        text-decoration: none;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        color: white;
+        text-align: center;
+        background-color: #f37121;
+        margin: 5vh 5vw; }
+        .vi-tilbyder_knapper .vi-tilbyder_flex .vi-tilbyder_knap2:hover {
+          opacity: 0.8; }
+      .vi-tilbyder_knapper .vi-tilbyder_flex .vi-tilbyder_knap3 {
+        border-radius: 50%;
+        text-decoration: none;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        color: white;
+        text-align: center;
+        background-color: #006088;
+        margin: 5vh 0;
+        line-height: normal; }
+        .vi-tilbyder_knapper .vi-tilbyder_flex .vi-tilbyder_knap3:hover {
+          opacity: 0.8; }
+        .vi-tilbyder_knapper .vi-tilbyder_flex .vi-tilbyder_knap3 div {
+          margin: 75px auto; }
+
+  .vi-tilbyder_runde-billeder {
+    width: 50%; }
+
+  #vi-tilbyder_generalt, #vi-tilbyder_kurser {
+    padding-top: 30px; }
+    #vi-tilbyder_generalt h1, #vi-tilbyder_kurser h1 {
+      display: none; }
+
+  .textbox {
+    width: 75%; } }
 @media screen and (min-width: 992px) {
   #medlem article #medlem_flex_text div #medlem_box p {
     line-height: 7.5vh;
@@ -441,38 +492,6 @@ footer {
           background-color: white;
           color: #006088;
           cursor: pointer; }
-
-  #tilbud_box {
-    display: flex;
-    justify-content: space-between;
-    background-color: #0097d7;
-    width: 66vw;
-    height: 7.5vh;
-    border-radius: 7.5vh;
-    max-width: 300px;
-    margin: 7.5vh auto;
-    cursor: pointer;
-    text-decoration: none; }
-    #tilbud_box:hover {
-      background-color: #006088; }
-    #tilbud_box p {
-      margin: 0 2vw 0 3vw;
-      line-height: 7.5vh;
-      font-size: 14px;
-      color: white;
-      max-width: 300px;
-      cursor: pointer;
-      text-align: center; }
-    #tilbud_box #arrow_button {
-      height: 7.5vh;
-      width: 7.5vh;
-      background-color: #f37121;
-      border: none;
-      color: white;
-      border-radius: 7.5vh;
-      max-width: 300px;
-      cursor: pointer;
-      outline: none; }
 
   #om_jci_section article {
     display: flex; }

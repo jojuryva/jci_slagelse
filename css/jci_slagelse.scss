@@ -2,8 +2,61 @@
 // Alt der gælder for mobil og højere
 
 $blue: #0097d7;
-$darkblue: #006088;
+$dark-blue: #006088;
 $orange: #f37121;
+
+@mixin tilbyder-box() {
+  border-radius: 50%;
+  text-decoration: none;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  color: white;
+  text-align: center;
+}
+
+@mixin button() {
+  display: flex;
+  justify-content: space-between;
+  background-color: $blue;
+  width: 66vw;
+  height: 7.5vh;
+  border-radius: 7.5vh;
+  max-width: 300px;
+  margin: 7.5vh auto;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: white;
+
+    p {
+      color: $orange;
+    }
+  }
+
+  p {
+    margin-left: 2vw;
+    line-height: 7.5vh;
+    font-size: 14px;
+    color: white;
+    max-width: 300px;
+    cursor: pointer;
+
+  }
+
+  button {
+    height: 7.5vh;
+    width: 7.5vh;
+    background-color: $orange;
+    border: none;
+    color: white;
+    border-radius: 7.5vh;
+    max-width: 300px;
+    cursor: pointer;
+    outline: none;
+  }
+}
 
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
@@ -25,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: bold;
+  text-align: center;
 }
 
 h2 {
@@ -60,7 +114,7 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-// Joachim Kode Start ----------------------
+// Joachim - Forside Kode Start ----------------------
 
 header {
   width: 100vw;
@@ -130,11 +184,11 @@ header {
       #clickShow_1_2, #clickShow_2_2 {
         display: none;
         a {
-          background-color: $darkblue;
+          background-color: $dark-blue;
 
           &:hover {
             background-color: white;
-            color: $darkblue;
+            color: $dark-blue;
           }
         }
       }
@@ -165,59 +219,19 @@ header {
 
 #forside {
   height: 100vh;
-  background-image: url("../images/forside.jpg");
+  background: url("../images/forside.jpg") no-repeat center;
   background-size: cover;
-  background-position: center;
 
   #logo {
     width: 50vw;
     max-width: 300px;
     margin: auto;
-    padding: 25vh 0 0 0;
+    padding-top: 25vh;
 
   }
 
   #tilbud_box {
-    display: flex;
-    justify-content: space-between;
-    background-color: $blue;
-    width: 66vw;
-    height: 7.5vh;
-    border-radius: 7.5vh;
-    max-width: 300px;
-    margin: 7.5vh auto;
-    cursor: pointer;
-    text-decoration: none;
-
-    &:hover {
-      background-color: white;
-
-      p {
-        color: $orange;
-      }
-    }
-
-    p {
-      margin: 0 0 0 2vw;
-      line-height: 7.5vh;
-      font-size: 14px;
-      color: white;
-      max-width: 300px;
-      cursor: pointer;
-
-    }
-
-    button {
-      height: 7.5vh;
-      width: 7.5vh;
-      background-color: $orange;
-      border: none;
-      color: white;
-      border-radius: 7.5vh;
-      max-width: 300px;
-      cursor: pointer;
-      outline: none;
-    }
+    @include button;
   }
 
   #om_jci {
@@ -268,7 +282,7 @@ header {
   padding-top: 5vh;
 
   #particles-js {
-    background-color: $darkblue;
+    background-color: $dark-blue;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -294,46 +308,7 @@ header {
       div {
 
         #medlem_box {
-          display: flex;
-          justify-content: space-between;
-          background-color: $blue;
-          width: 50vw;
-          height: 7.5vh;
-          border-radius: 7.5vh;
-          max-width: 300px;
-          margin: 7.5vh auto;
-          cursor: pointer;
-          text-decoration: none;
-
-          &:hover {
-            background-color: white;
-
-            p {
-              color: $orange;
-            }
-          }
-
-          p {
-            margin: 0 2vw 0 3.5vw;
-            line-height: 7.5vh;
-            font-size: 14px;
-            color: white;
-            max-width: 300px;
-            cursor: pointer;
-            text-align: center;
-          }
-
-          button {
-            height: 7.5vh;
-            width: 7.5vh;
-            background-color: $orange;
-            border: none;
-            color: white;
-            border-radius: 7.5vh;
-            max-width: 200px;
-            cursor: pointer;
-            outline: none;
-          }
+          @include button
         }
       }
     }
@@ -403,7 +378,6 @@ header {
       p {
         color: white;
       }
-
     }
   }
 }
@@ -441,23 +415,25 @@ footer {
   }
 }
 
-// Joachim Kode Slut ----------------------
+// Joachim - Forside Kode Slut ----------------------
 
-//UNDERSIDE - Vi tilbyder - Sabine START -----------------------
+// Sabine - Vi Tilbyder Kode Start ------------------
+
 .vi-tilbyder_knapper {
   display: none;
-
-  /*Section med knapper er ikke synlig på mobil*/
 }
 
 .vi-tilbyder_runde-billeder{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 30px auto;
   border-radius: 50%;
-  width: 60%;
+  width: 50%;
+}
+
+.textbox {
+  margin: auto;
+  width: 80%;
+  padding-bottom: 40px;
 }
 
 #vi-tilbyder_generalt, #vi-tilbyder_kurser {
@@ -465,12 +441,8 @@ footer {
   width: 100%;
   padding-top: 15vh;
 
-  h1 {
-    text-align: center;
-  }
-
   #particles-js {
-    background-color: $darkblue;
+    background-color: $dark-blue;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -489,19 +461,12 @@ footer {
   padding-bottom: 40px;
 }
 
-.textbox {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  padding-bottom: 40px;
-}
-//UNDERSIDE - Vi tilbyder - Sabine SLUT -----------------------
+// Sabine - Vi Tilbyder Kode Slut ------------------
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
-  // Joachim Kode Start ----------------------
+  // Joachim Kode Start ----------------------------
 
   #medlem {
 
@@ -543,6 +508,73 @@ footer {
   }
 
   // Joachim Kode Slut ----------------------
+
+  // Sabine - Vi Tilbyder Kode Start ------------------
+
+  .vi-tilbyder_knapper {
+    display: block;
+    background-color: white;
+    padding-top: 15vh;
+
+    .vi-tilbyder_flex {
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .vi-tilbyder_knap1 {
+        @include tilbyder-box;
+        background-color: $blue;
+        margin: 5vh 0;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .vi-tilbyder_knap2 {
+        @include tilbyder-box;
+        background-color: $orange;
+        margin: 5vh 5vw;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .vi-tilbyder_knap3 {
+        @include tilbyder-box;
+        background-color: $dark-blue;
+        margin: 5vh 0;
+        line-height: normal;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        div {
+          margin: 75px auto;
+        }
+      }
+    }
+  }
+
+  .vi-tilbyder_runde-billeder {
+    width: 50%;
+  }
+  #vi-tilbyder_generalt, #vi-tilbyder_kurser {
+    padding-top: 30px;
+
+    h1 {
+      display: none;
+    }
+  }
+
+  .textbox {
+    width: 75%;
+  }
+  //UNDERSIDE - Vi tilbyder - Sabine SLUT ---------------------
 }
 
 @media screen and (min-width: 992px) {
@@ -642,7 +674,7 @@ footer {
     top: 10vh;
 
     #clickShowWeb_1_2 {
-      background-color: $darkblue;
+      background-color: $dark-blue;
       display: none;
 
       a {
@@ -656,14 +688,14 @@ footer {
 
         &:hover {
           background-color: white;
-          color: $darkblue;
+          color: $dark-blue;
           cursor: pointer;
         }
       }
     }
 
     #clickShowWeb_2_2 {
-      background-color: $darkblue;
+      background-color: $dark-blue;
       display: none;
 
       a {
@@ -677,49 +709,10 @@ footer {
 
         &:hover {
           background-color: white;
-          color: $darkblue;
+          color: $dark-blue;
           cursor: pointer;
         }
       }
-    }
-  }
-
-  #tilbud_box {
-    display: flex;
-    justify-content: space-between;
-    background-color: $blue;
-    width: 66vw;
-    height: 7.5vh;
-    border-radius: 7.5vh;
-    max-width: 300px;
-    margin: 7.5vh auto;
-    cursor: pointer;
-    text-decoration: none;
-
-    &:hover {
-      background-color: $darkblue;
-    }
-
-    p {
-      margin: 0 2vw 0 3vw;
-      line-height: 7.5vh;
-      font-size: 14px;
-      color: white;
-      max-width: 300px;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    #arrow_button {
-      height: 7.5vh;
-      width: 7.5vh;
-      background-color: $orange;
-      border: none;
-      color: white;
-      border-radius: 7.5vh;
-      max-width: 300px;
-      cursor: pointer;
-      outline: none;
     }
   }
 
@@ -773,7 +766,7 @@ footer {
 
         #front_box_3 {
           display: block;
-          background-color: $darkblue;
+          background-color: $dark-blue;
           height: 300px;
           width: 300px;
           border-radius: 50%;
