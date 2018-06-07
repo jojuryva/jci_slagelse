@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -288,6 +289,35 @@ footer {
   footer .some {
     margin: 4vh 2.5vw;
     line-height: 0; }
+
+.vi-tilbyder_knapper {
+  display: none;
+  /*Section med knapper er ikke synlig på mobil*/ }
+
+.vi-tilbyder_runde-billeder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 60%; }
+
+#vi-tilbyder_generalt, #vi-tilbyder_kurser {
+  background-color: #006088;
+  width: 100%;
+  padding-top: 60px; }
+
+#vi-tilbyder_kurser {
+  padding-top: 10px;
+  padding-bottom: 40px; }
+
+.textbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 40px; }
 
 @media screen and (min-width: 768px) {
   #medlem article #medlem_box_2 {

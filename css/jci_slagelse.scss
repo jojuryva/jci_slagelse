@@ -436,6 +436,43 @@ footer {
 
 // Joachim Kode Slut ----------------------
 
+//UNDERSIDE - Vi tilbyder - Sabine START -----------------------
+.vi-tilbyder_knapper {
+  display: none;
+
+  /*Section med knapper er ikke synlig på mobil*/
+}
+
+.vi-tilbyder_runde-billeder{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 60%;
+}
+
+#vi-tilbyder_generalt, #vi-tilbyder_kurser {
+  background-color: $darkblue;
+  width: 100%;
+  padding-top: 60px;
+}
+
+#vi-tilbyder_kurser {
+  padding-top:10px;
+  padding-bottom: 40px;
+}
+
+.textbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 40px;
+}
+//UNDERSIDE - Vi tilbyder - Sabine SLUT -----------------------
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
