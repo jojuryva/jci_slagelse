@@ -1,8 +1,6 @@
 @charset "utf-8";
 // Alt der gælder for mobil og højere
 
-//Joachim har kodet dette
-
 $blue: #0097d7;
 $darkblue: #006088;
 $orange: #f37121;
@@ -55,7 +53,7 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-// Joachim kode
+// Joachim Kode Start ----------------------
 
 header {
   width: 100vw;
@@ -436,8 +434,12 @@ footer {
   }
 }
 
+// Joachim Kode Slut ----------------------
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+  // Joachim Kode Start ----------------------
 
   #medlem {
 
@@ -477,6 +479,8 @@ footer {
       }
     }
   }
+
+  // Joachim Kode Slut ----------------------
 }
 
 @media screen and (min-width: 992px) {
