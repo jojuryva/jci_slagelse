@@ -454,9 +454,21 @@ footer {
 }
 
 #vi-tilbyder_generalt, #vi-tilbyder_kurser {
-  background-color: $darkblue;
   width: 100%;
   padding-top: 60px;
+
+  #particles-js {
+    background-color: $darkblue;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+#vi-tilbyder_uddannelser {
+  background-color: white;
 }
 
 #vi-tilbyder_kurser {
