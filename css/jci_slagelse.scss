@@ -27,6 +27,13 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 5vh 0;
+}
+
 h3 {
   font-weight: normal;
 }
@@ -454,8 +461,13 @@ footer {
 }
 
 #vi-tilbyder_generalt, #vi-tilbyder_kurser {
+  color: white;
   width: 100%;
-  padding-top: 60px;
+  padding-top: 15vh;
+
+  h1 {
+    text-align: center;
+  }
 
   #particles-js {
     background-color: $darkblue;
@@ -468,6 +480,7 @@ footer {
 }
 
 #vi-tilbyder_uddannelser {
+  padding-top: 5vh;
   background-color: white;
 }
 

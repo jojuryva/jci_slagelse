@@ -17,6 +17,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: bold; }
 
+h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 5vh 0; }
+
 h3 {
   font-weight: normal; }
 
@@ -304,8 +310,11 @@ footer {
   width: 60%; }
 
 #vi-tilbyder_generalt, #vi-tilbyder_kurser {
+  color: white;
   width: 100%;
-  padding-top: 60px; }
+  padding-top: 15vh; }
+  #vi-tilbyder_generalt h1, #vi-tilbyder_kurser h1 {
+    text-align: center; }
   #vi-tilbyder_generalt #particles-js, #vi-tilbyder_kurser #particles-js {
     background-color: #006088;
     height: 100vh;
@@ -315,6 +324,7 @@ footer {
     z-index: -1; }
 
 #vi-tilbyder_uddannelser {
+  padding-top: 5vh;
   background-color: white; }
 
 #vi-tilbyder_kurser {
