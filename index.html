@@ -30,26 +30,26 @@
                     <i id="navBars" class="fas fa-bars fa-2x"></i>
                 </nav>
                 <nav id="navWeb">
-                    <a href="#om_jci" class="onPage" id="clickWeb_1">Om JCI</a>
+                    <a href="#" class="onPage" id="clickWeb_1">Om JCI</a>
                     <a href="vi_tilbyder.html">Vi Tilbyder</a>
                     <a href="#" id="clickWeb_2">Events</a>
-                    <a href="#">Grangia</a>
-                    <a href="#">Kontakt</a>
+                    <a href="grangia.html">Grangia</a>
+                    <a href="kontakt.html">Kontakt</a>
                 </nav>
                 <nav id="navElements">
-                    <a href="#om_jci" id="click_1">Om JCI</a>
+                    <a href="#" id="click_1">Om JCI</a>
                     <div id="clickShow_1_2">
                         <a href="#medlem_section">Medlemsskab</a>
                         <a href="#hvem_er_vi_section">Hvem Er Vi?</a>
-                        <a href="#">Partnere</a>
+                        <a href="#partners_section">Partnere</a>
                     </div>
                     <a href="vi_tilbyder.html">Vi Tilbyder</a>
                     <a href="#" id="click_2">Events</a>
                     <div id="clickShow_2_2">
-                        <a href="#">Kalender</a>
-                        <a href="#">Konkurrencer</a>
-                        <a href="#">Kongresser</a>
-                        <a href="#">Projektarbejde</a>
+                        <a href="events_kalender.html#">Kalender</a>
+                        <a href="events_konkurrencer.html">Konkurrencer</a>
+                        <a href="events_kongresser.html">Kongresser</a>
+                        <a href="events_projektarbejde.html">Projektarbejde</a>
                     </div>
                     <a href="#">Grangia</a>
                     <a href="#">Kontakt</a>
@@ -65,13 +65,13 @@
             <div id="clickShowWeb_1_2">
                 <a href="#medlem_section">Medlemsskab</a>
                 <a href="#hvem_er_vi_section">Hvem Er Vi?</a>
-                <a href="#">Partnere</a>
+                <a href="#partners_section">Partnere</a>
             </div>
             <div id="clickShowWeb_2_2">
-                <a href="#">Kalender</a>
-                <a href="#">Konkurrencer</a>
-                <a href="#">Kongresser</a>
-                <a href="#">Projektarbejde</a>
+                <a href="events_kalender.html">Kalender</a>
+                <a href="events_konkurrencer.html">Konkurrencer</a>
+                <a href="events_kongresser.html">Kongresser</a>
+                <a href="events_projektarbejde.html">Projektarbejde</a>
             </div>
         </header>
         <section id="forside">
@@ -154,7 +154,6 @@
         </section>
         <section id="medlem">
             <div id="particles-js"></div>
-            <div id="push_box"></div>
             <h1>
                 Medlemskab
             </h1>
@@ -284,16 +283,41 @@
             <h1>
                 Partnere
             </h1>
-            <a href="https://www.dit-slagelse.dk/" target="_blank">
-                <img src="images/partner_dit_slagelse_graa.png" id="dit_slagelse">
-                <img src="images/partner_dit_slagelse.png" id="dit_slagelse_farve">
-            </a>
-            <a href="https://www.sparnord.dk/" target="_blank">
-              <div id="spar_nord"></div>
-            </a>
-            <a href="http://www.theupperhill.dk/" target="_blank">
-              <div id="upper_hill"></div>
-            </a>
+            <div id="partners_flex">
+                <div id="upper_hill">
+                    <a href="http://www.theupperhill.dk/" target="_blank">
+                        <img src="images/partner_upper_hill.png" alt="The Upper Hills Logo">
+                    </a>
+                    <br>
+                    <p>
+                        Vores partnerskab med The Upper Hill i centrum af
+                        Slagelse gør, at vi har en super fed base til vores møder,
+                        hvor vi udover et flot lokale også får lækker mad til møderne.
+                    </p>
+                </div>
+                <div id="spar_nord">
+                    <a href="https://www.sparnord.dk/" target="_blank">
+                        <img src="images/partner_spar_nord.png" alt="Spar Nords Logo">
+                    </a>
+                    <br>
+                    <p id="spar_nord_text">
+                        Vores bankpartner i JCI Slagelse er Spar Nord,
+                        som er med til at gøre det muligt for os,
+                        at have vores lokale afdeling af JCI.
+                    </p>
+                </div>
+                <div id="dit_slagelse">
+                    <a href="https://www.dit-slagelse.dk/" target="_blank">
+                        <img src="images/partner_dit_slagelse.png" alt="Dit Slagelses Logo">
+                    </a>
+                    <br>
+                    <p id="dit_slagelse_text">
+                        Byportalen Dit Slagelse hjælper os med at dele de
+                        gode historier om JCI Slagelse og de projekter
+                        som vi er involveret i.
+                    </p>
+                </div>
+            </div>
         </section>
         <div id="back_to_top">
             <i class="fas fa-angle-up fa-2x"></i>

@@ -6,6 +6,7 @@
 body {
   margin: 0;
   max-width: 100vw;
+  max-height: 100%;
   overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -147,94 +148,89 @@ header {
       outline: none; }
   #forside #om_jci {
     margin-top: 35vh;
-    height: 5vh;
-    width: 100vw; }
+    height: 5vh; }
 
 #om_jci_section {
   background-color: white;
   height: auto;
-  margin: 5vh 2.5vw; }
+  padding: 5vh 0; }
   #om_jci_section h1 {
-    margin: 5vh 0;
+    margin-bottom: 5vh;
     text-align: center; }
   #om_jci_section article {
-    display: block; }
-    #om_jci_section article #front_flex_text {
-      width: 100vw; }
-      #om_jci_section article #front_flex_text p {
-        margin: 5vh 2.5vw; }
-      #om_jci_section article #front_flex_text ul {
-        margin: 5vh 2.5vw; }
-        #om_jci_section article #front_flex_text ul li {
-          margin: 2.5vh; }
+    display: block;
+    margin: 0 5vh; }
+    #om_jci_section article #front_flex_text p {
+      margin-top: 5vh; }
+    #om_jci_section article #front_flex_text ul {
+      margin: 5vh 0; }
+      #om_jci_section article #front_flex_text ul li {
+        margin: 2.5vh; }
     #om_jci_section article #front_flex {
       display: none; }
       #om_jci_section article #front_flex #front_flex_1, #om_jci_section article #front_flex #front_flex_2, #om_jci_section article #front_flex #front_flex_3 {
         display: none; }
-  #om_jci_section #medlem_section {
-    margin-top: 5vh;
-    width: 100vw; }
 
-#medlem h1 {
-  color: white;
-  text-align: center;
-  margin: 5vh; }
-#medlem #push_box {
-  height: 1vh; }
-#medlem #particles-js {
-  background-color: #006088;
-  height: 500vh;
-  width: 100vw;
-  position: absolute;
-  z-index: -1; }
-#medlem article {
-  height: auto; }
-  #medlem article #medlem_flex_text {
-    margin: 5vw; }
-    #medlem article #medlem_flex_text p {
-      color: white; }
-    #medlem article #medlem_flex_text div #medlem_box {
-      display: flex;
-      justify-content: space-between;
-      background-color: #0097d7;
-      width: 50vw;
-      height: 7.5vh;
-      border-radius: 7.5vh;
-      max-width: 200px;
-      margin: 7.5vh auto;
-      cursor: pointer;
-      text-decoration: none; }
-      #medlem article #medlem_flex_text div #medlem_box:hover {
-        background-color: white; }
-        #medlem article #medlem_flex_text div #medlem_box:hover p {
-          color: #f37121; }
-      #medlem article #medlem_flex_text div #medlem_box p {
-        margin: 0 2vw 0 3.5vw;
-        line-height: 7.5vh;
-        font-size: 14px;
-        color: white;
-        max-width: 200px;
-        cursor: pointer;
-        text-align: center; }
-      #medlem article #medlem_flex_text div #medlem_box button {
-        height: 7.5vh;
-        width: 7.5vh;
-        background-color: #f37121;
-        border: none;
-        color: white;
-        border-radius: 7.5vh;
-        max-width: 200px;
-        cursor: pointer;
-        outline: none; }
-  #medlem article #medlem_box_2 {
-    background-color: #0097d7;
-    height: 50vw;
+#medlem {
+  padding-top: 5vh; }
+  #medlem #particles-js {
+    background-color: #006088;
+    height: 100vh;
     width: 100vw;
-    border-radius: 100vw 100vw 0 0; }
-    #medlem article #medlem_box_2 p {
-      padding-top: 5vh;
-      text-align: center;
-      color: white; }
+    position: fixed;
+    top: 0;
+    z-index: -1; }
+  #medlem h1 {
+    color: white;
+    text-align: center; }
+  #medlem article {
+    height: auto; }
+    #medlem article #medlem_flex_text {
+      margin: 5vh; }
+      #medlem article #medlem_flex_text p {
+        color: white; }
+      #medlem article #medlem_flex_text div #medlem_box {
+        display: flex;
+        justify-content: space-between;
+        background-color: #0097d7;
+        width: 50vw;
+        height: 7.5vh;
+        border-radius: 7.5vh;
+        max-width: 300px;
+        margin: 7.5vh auto;
+        cursor: pointer;
+        text-decoration: none; }
+        #medlem article #medlem_flex_text div #medlem_box:hover {
+          background-color: white; }
+          #medlem article #medlem_flex_text div #medlem_box:hover p {
+            color: #f37121; }
+        #medlem article #medlem_flex_text div #medlem_box p {
+          margin: 0 2vw 0 3.5vw;
+          line-height: 7.5vh;
+          font-size: 14px;
+          color: white;
+          max-width: 300px;
+          cursor: pointer;
+          text-align: center; }
+        #medlem article #medlem_flex_text div #medlem_box button {
+          height: 7.5vh;
+          width: 7.5vh;
+          background-color: #f37121;
+          border: none;
+          color: white;
+          border-radius: 7.5vh;
+          max-width: 200px;
+          cursor: pointer;
+          outline: none; }
+    #medlem article #medlem_box_2 {
+      background-color: #0097d7;
+      height: 50vw;
+      width: 100vw;
+      border-radius: 100vw 100vw 0 0; }
+      #medlem article #medlem_box_2 p {
+        padding-top: 5vh;
+        text-align: center;
+        color: white; }
 
 #hvem_er_vi {
   background-color: white;
@@ -248,11 +244,25 @@ header {
     margin: 5vh auto;
     border-radius: 150px; }
 
-#partners {
-  background-color: transparent; }
-  #partners h1 {
-    text-align: center;
-    color: white; }
+#partners h1 {
+  margin: 5vh 5vw 2.5vh 5vw;
+  text-align: center;
+  color: white; }
+#partners #partners_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  #partners #partners_flex #upper_hill, #partners #partners_flex #spar_nord, #partners #partners_flex #dit_slagelse {
+    margin: 2.5vh auto;
+    width: 250px; }
+    #partners #partners_flex #upper_hill img, #partners #partners_flex #spar_nord img, #partners #partners_flex #dit_slagelse img {
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1); }
+      #partners #partners_flex #upper_hill img:hover, #partners #partners_flex #spar_nord img:hover, #partners #partners_flex #dit_slagelse img:hover {
+        cursor: pointer;
+        filter: none; }
+    #partners #partners_flex #upper_hill p, #partners #partners_flex #spar_nord p, #partners #partners_flex #dit_slagelse p {
+      color: white; }
 
 #back_to_top {
   background-color: #f37121;
@@ -263,8 +273,8 @@ header {
   line-height: 9vh;
   text-align: center;
   position: fixed;
-  bottom: 4vh;
-  right: 5vw; }
+  bottom: 20px;
+  right: 20px; }
   #back_to_top:hover {
     cursor: pointer; }
 
@@ -274,13 +284,12 @@ footer {
   color: white;
   background-color: black; }
   footer p {
-    margin: 5vh 2.5vw 0 0; }
+    margin: 5vh 2.5vw; }
   footer .some {
-    margin: 4vh 0; }
+    margin: 4vh 2.5vw;
+    line-height: 0; }
 
 @media screen and (min-width: 768px) {
-  #medlem #particles-js {
-    height: 150vh; }
   #medlem article #medlem_box_2 {
     background-color: #0097d7;
     height: 50vw;
@@ -291,102 +300,32 @@ footer {
       text-align: center;
       color: white; }
 
-  #hvem_er_vi #hvem_er_vi_mobil_box {
-    display: none; }
   #hvem_er_vi #hvem_er_vi_flex_1, #hvem_er_vi #hvem_er_vi_flex_2 {
     display: flex;
     justify-content: center; }
     #hvem_er_vi #hvem_er_vi_flex_1 div, #hvem_er_vi #hvem_er_vi_flex_2 div {
-      margin: 0 5vh; } }
+      margin: 2.5vw; }
+      #hvem_er_vi #hvem_er_vi_flex_1 div img, #hvem_er_vi #hvem_er_vi_flex_2 div img {
+        margin: 2.5vw; }
+      #hvem_er_vi #hvem_er_vi_flex_1 div p, #hvem_er_vi #hvem_er_vi_flex_2 div p {
+        width: 200px; } }
 @media screen and (min-width: 992px) {
-  #om_jci_section article {
-    display: flex; }
-    #om_jci_section article #front_flex_text {
-      width: 50vw; }
-      #om_jci_section article #front_flex_text p {
-        margin: 5vh 2.5vw; }
-      #om_jci_section article #front_flex_text ul {
-        margin: 5vh 2.5vw; }
-        #om_jci_section article #front_flex_text ul li {
-          margin: 2.5vh; }
-    #om_jci_section article #front_flex {
-      display: flex;
-      flex-direction: column;
-      width: 50vw;
-      margin-top: 2.5vh; }
-      #om_jci_section article #front_flex #front_box_1 {
-        display: block;
-        background-color: #f37121;
-        color: white;
-        height: 60vh;
-        width: 60vh;
-        line-height: 60vh;
-        text-align: center;
-        border-radius: 50%;
-        margin-top: 2.5vh; }
-        #om_jci_section article #front_flex #front_box_1 p {
-          font-size: 24px;
-          margin: auto; }
-      #om_jci_section article #front_flex #front_box_2 {
-        display: block;
-        background-color: #0097d7;
-        color: white;
-        height: 40vh;
-        width: 40vh;
-        line-height: 40vh;
-        text-align: center;
-        border-radius: 50%;
-        margin: -15vh 5vw 0 30vw; }
-        #om_jci_section article #front_flex #front_box_2 p {
-          font-size: 24px;
-          margin: auto; }
-      #om_jci_section article #front_flex #front_box_3 {
-        display: block;
-        background-color: #006088;
-        color: white;
-        height: 50vh;
-        width: 50vh;
-        line-height: 50vh;
-        text-align: center;
-        border-radius: 50%;
-        margin: -15vh 5vw 0 5vw; }
-        #om_jci_section article #front_flex #front_box_3 p {
-          font-size: 24px;
-          margin: auto; }
-
-  #medlem #particles-js {
-    height: 110vh; }
-  #medlem article {
-    display: flex; }
-    #medlem article #medlem_flex_text {
-      width: 50vw; }
-      #medlem article #medlem_flex_text div #medlem_box p {
-        margin: 0 1vw 0 2vw;
-        line-height: 7.5vh;
-        font-size: 14px;
-        color: white;
-        max-width: 200px;
-        cursor: pointer; }
-      #medlem article #medlem_flex_text div #medlem_box button {
-        height: 7.5vh;
-        width: 7.5vh;
-        background-color: #f37121;
-        border: none;
-        color: white;
-        border-radius: 7.5vh;
-        max-width: 200px;
-        cursor: pointer;
-        outline: none; }
-    #medlem article #medlem_box_2 {
-      background-color: #0097d7;
-      height: 30vw;
-      width: 30vw;
-      border-radius: 30vw; }
-      #medlem article #medlem_box_2 p {
-        margin: 5vh;
-        font-size: 24px;
-        text-align: center;
-        color: white; } }
+  #medlem article #medlem_flex_text div #medlem_box p {
+    line-height: 7.5vh;
+    font-size: 14px;
+    color: white;
+    max-width: 300px;
+    cursor: pointer; }
+  #medlem article #medlem_flex_text div #medlem_box button {
+    height: 7.5vh;
+    width: 7.5vh;
+    background-color: #f37121;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    max-width: 300px;
+    cursor: pointer;
+    outline: none; } }
 @media screen and (min-width: 1200px) {
   header {
     display: flex; }
@@ -485,11 +424,73 @@ footer {
       max-width: 300px;
       cursor: pointer;
       outline: none; }
-    #tilbud_box #om_jci_section {
-      height: auto;
-      margin: 5vh 2.5vw; }
-      #tilbud_box #om_jci_section h1 {
-        margin: 5vh 0;
-        text-align: center; } }
+
+  #om_jci_section article {
+    display: flex; }
+    #om_jci_section article #front_flex_text {
+      width: 50vw; }
+    #om_jci_section article #front_flex {
+      width: 50vw;
+      display: flex;
+      flex-direction: column; }
+      #om_jci_section article #front_flex #front_box_1 {
+        display: block;
+        background-color: #f37121;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        line-height: 400px;
+        margin-left: 7.5vw; }
+        #om_jci_section article #front_flex #front_box_1 p {
+          color: white;
+          font-weight: bold;
+          font-size: 32px;
+          text-align: center; }
+      #om_jci_section article #front_flex #front_box_2 {
+        display: block;
+        background-color: #0097d7;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        line-height: 200px;
+        margin-left: 25vw; }
+        #om_jci_section article #front_flex #front_box_2 p {
+          color: white;
+          font-weight: bold;
+          font-size: 24px;
+          text-align: center; }
+      #om_jci_section article #front_flex #front_box_3 {
+        display: block;
+        background-color: #006088;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        line-height: 300px;
+        margin: -5vh 0 0 7.5vw; }
+        #om_jci_section article #front_flex #front_box_3 p {
+          color: white;
+          font-weight: bold;
+          font-size: 28px;
+          text-align: center; }
+
+  #medlem article {
+    display: flex; }
+    #medlem article #medlem_flex_text {
+      width: 50vw; }
+    #medlem article #medlem_box_2 {
+      margin: 5vh auto auto auto;
+      background-color: #0097d7;
+      height: 300px;
+      width: 300px;
+      border-radius: 300px; }
+      #medlem article #medlem_box_2 p {
+        padding-top: 5vh;
+        text-align: center;
+        color: white; }
+
+  #partners #partners_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; } }
 
 /*# sourceMappingURL=jci_slagelse.css.map */
