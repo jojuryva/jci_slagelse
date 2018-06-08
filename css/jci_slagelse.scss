@@ -58,6 +58,15 @@ $orange: #f37121;
   }
 }
 
+#particles-js {
+  background-color: $dark-blue;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
@@ -114,6 +123,22 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+// Joachim - 404 Kode Start --------------------------
+
+#404_text {
+
+  h1 {
+    color: white;
+  }
+
+  p {
+    margin: 5vh 5vw;
+    color: white;
+  }
+}
+
+// Joachim - 404 Kode Slut --------------------------
+
 // Joachim - Forside Kode Start ----------------------
 
 header {
@@ -122,6 +147,7 @@ header {
   position: fixed;
   top: 0;
   color: white;
+  z-index: 1;
 
   #logoWeb {
     display: none;
@@ -201,6 +227,7 @@ header {
 }
 
 #subHeader {
+  z-index: 1;
   display: none;
 }
 
@@ -281,14 +308,7 @@ header {
 #medlem {
   padding-top: 5vh;
 
-  #particles-js {
-    background-color: $dark-blue;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    z-index: -1;
-  }
+
 
   h1 {
     color: white;
@@ -441,14 +461,7 @@ footer {
   width: 100%;
   padding-top: 15vh;
 
-  #particles-js {
-    background-color: $dark-blue;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    z-index: -1;
-  }
+
 }
 
 #vi-tilbyder_uddannelser {
