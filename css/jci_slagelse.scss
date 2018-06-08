@@ -58,15 +58,6 @@ $orange: #f37121;
   }
 }
 
-#particles-js {
-  background-color: $dark-blue;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  z-index: -1;
-}
-
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
@@ -123,21 +114,43 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+#particles-js {
+  background-color: $dark-blue;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
 // Joachim - 404 Kode Start --------------------------
 
-#404_text {
+#fejl404 {
+  height: 33vh;
+  width: 50vw;
+  margin: 33vh auto;
+  color: white;
 
   h1 {
-    color: white;
+    margin: 5vh 2.5vw;
   }
 
   p {
-    margin: 5vh 5vw;
-    color: white;
+    margin: 5vh auto;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: $orange;
+      }
+    }
   }
 }
 
-// Joachim - 404 Kode Slut --------------------------
+// Joachim - 404 Kode Slut ---------------------------
 
 // Joachim - Forside Kode Start ----------------------
 
