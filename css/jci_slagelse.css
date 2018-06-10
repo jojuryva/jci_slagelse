@@ -416,6 +416,77 @@ footer {
     border-radius: 50%;
     margin: 5vh auto; }
 
+.overskriftmob {
+  margin-top: 15vh;
+  color: white; }
+  .overskriftmob h1 {
+    margin: 5vh 0; }
+  .overskriftmob .tekstto {
+    margin: 0 5vh; }
+
+.overskriftweb {
+  display: none; }
+
+aside {
+  display: flex;
+  position: relative; }
+
+.inputfarve {
+  border: solid #0097d7;
+  border-radius: 3px; }
+
+.booking {
+  width: 100%;
+  height: 100%; }
+  .booking .koncontainermob {
+    text-align: center; }
+  .booking .tekstilbokse {
+    display: none; }
+  .booking .koncontainerweb {
+    display: none; }
+
+textarea {
+  resize: none; }
+
+.billede {
+  display: none; }
+
+.billedetekst {
+  display: none; }
+
+#send_button {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0097d7;
+  width: 66vw;
+  height: 7.5vh;
+  border-radius: 7.5vh;
+  max-width: 300px;
+  margin: 7.5vh auto;
+  cursor: pointer;
+  text-decoration: none; }
+  #send_button:hover {
+    background-color: white; }
+    #send_button:hover p {
+      color: #f37121; }
+  #send_button p {
+    margin-left: 2vw;
+    line-height: 7.5vh;
+    font-size: 14px;
+    color: white;
+    max-width: 300px;
+    cursor: pointer; }
+  #send_button button {
+    height: 7.5vh;
+    width: 7.5vh;
+    background-color: #f37121;
+    border: none;
+    color: white;
+    border-radius: 7.5vh;
+    max-width: 300px;
+    cursor: pointer;
+    outline: none; }
+
 @media screen and (min-width: 768px) {
   #medlem article #medlem_box_2 {
     background-color: #0097d7;
