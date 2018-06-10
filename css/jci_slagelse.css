@@ -381,6 +381,8 @@ footer {
 .projekttekst {
   margin: 5vh;
   color: white; }
+  .projekttekst h2 {
+    text-align: center; }
   .projekttekst a {
     text-decoration: none;
     color: white; }
@@ -388,8 +390,8 @@ footer {
       color: #f37121; }
 
 .projektbillede img {
-  width: 75vw;
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin: auto auto 5vh; }
 
 @media screen and (min-width: 768px) {
   #medlem article #medlem_box_2 {
@@ -471,7 +473,16 @@ footer {
       display: none; }
 
   .textbox {
-    width: 75%; } }
+    width: 75%; }
+
+  .flex-kongresser, .flex-konkurrencer, .flex-projektarbejde {
+    display: flex; }
+
+  .projekttekst {
+    width: 50vw; }
+
+  .projektbillede img {
+    width: 50vw; } }
 @media screen and (min-width: 992px) {
   #medlem article #medlem_flex_text div #medlem_box {
     display: flex;
@@ -533,16 +544,7 @@ footer {
   .textbox {
     order: 1;
     width: 40%;
-    margin-top: 20px; }
-
-  .flex-kongresser, .flex-konkurrencer, .flex-projektarbejde {
-    display: flex; }
-
-  .projekttekst {
-    width: 50vw; }
-
-  .projektbillede {
-    width: 50vw; } }
+    margin-top: 20px; } }
 @media screen and (min-width: 1200px) {
   header {
     display: flex; }

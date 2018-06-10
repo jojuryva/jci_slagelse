@@ -561,6 +561,10 @@ footer {
   margin: 5vh;
   color: white;
 
+  h2 {
+    text-align: center;
+  }
+
   a {
     text-decoration: none;
     color: white;
@@ -575,8 +579,9 @@ footer {
 .projektbillede {
 
   img {
-    width: 75vw;
     border-radius: 50%;
+
+    margin: auto auto 5vh;
   }
 }
 
@@ -693,7 +698,24 @@ footer {
   .textbox {
     width: 75%;
   }
-  //UNDERSIDE - Vi tilbyder - Sabine SLUT ---------------------
+  // Sabine Vi tilbyder Slut ---------------------
+
+  // Markus Events Kode Start --------------------
+
+  .flex-kongresser, .flex-konkurrencer, .flex-projektarbejde {
+    display: flex;
+  }
+
+  .projekttekst {
+    width: 50vw;
+  }
+
+  .projektbillede {
+
+    img {
+      width: 50vw;
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -753,20 +775,6 @@ footer {
     order: 1;
     width: 40%;
     margin-top: 20px;
-  }
-
-  // Markus Events Kode Start ----------------
-
-  .flex-kongresser, .flex-konkurrencer, .flex-projektarbejde {
-    display: flex;
-  }
-
-  .projekttekst {
-    width: 50vw;
-  }
-
-  .projektbillede {
-    width: 50vw;
   }
 }
 
