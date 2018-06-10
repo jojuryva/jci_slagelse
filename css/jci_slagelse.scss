@@ -550,6 +550,28 @@ footer {
   display: block;
 }
 
+.projektarbejde {
+
+  h1 {
+    color: white;
+  }
+}
+
+.projekttekst {
+  margin: 5vh;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+}
+
 .projektbillede2{
   display: none;
 }

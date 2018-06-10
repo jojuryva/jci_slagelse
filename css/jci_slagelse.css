@@ -375,6 +375,18 @@ footer {
 .flex-projektarbejde {
   display: block; }
 
+.projektarbejde h1 {
+  color: white; }
+
+.projekttekst {
+  margin: 5vh;
+  color: white; }
+  .projekttekst a {
+    text-decoration: none;
+    color: white; }
+    .projekttekst a:hover {
+      color: #f37121; }
+
 .projektbillede2 {
   display: none; }
 
