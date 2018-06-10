@@ -123,7 +123,7 @@ img {
   z-index: -1;
 }
 
-// Joachim - 404 Kode Start --------------------------
+// Joachim - 404 Kode Start -------------------------
 
 #fejl404 {
   height: 33vh;
@@ -150,9 +150,9 @@ img {
   }
 }
 
-// Joachim - 404 Kode Slut ---------------------------
+// Joachim - 404 Kode Slut --------------------------
 
-// Joachim - Forside Kode Start ----------------------
+// Joachim - Forside Kode Start ---------------------
 
 header {
   width: 100vw;
@@ -483,16 +483,16 @@ footer {
   padding-bottom: 40px;
 }
 
-// Sabine - Vi Tilbyder Kode Slut ------------------
+// Sabine - Vi Tilbyder Kode Slut -------------------
 
-// Marcus Events Kode Start ------------------------
+// Marcus Events Kode Start -------------------------
 
 .eventoverskrift {
   text-align: center;
   padding: 15vh 0 0;
 }
 
-// Konkurrencer ------------------------------------
+// Konkurrencer -------------------------------------
 
 .flex-konkurrencer {
   display: block;
@@ -628,7 +628,9 @@ footer {
   }
 }
 
-// Adem - Kontakt Kode Start -----------------------
+// Marcus Events Kode Slut --------------------------
+
+// Adem - Kontakt Kode Start ------------------------
 
 .overskriftmob {
   margin-top: 15vh;
@@ -690,12 +692,12 @@ textarea {
   @include button;
 }
 
-// Marcus Events Kode Slut -----------------------------------
+// Adem - Kontakt Kode Slut -------------------------
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
-  // Joachim - Forside Kode Start ----------------------------
+  // Joachim - Forside Kode Start -------------------
 
   #medlem {
 
@@ -736,9 +738,9 @@ textarea {
     }
   }
 
-  // Joachim - Forside Kode Slut ----------------------
+  // Joachim - Forside Kode Slut --------------------
 
-  // Sabine - Vi Tilbyder Kode Start ------------------
+  // Sabine - Vi Tilbyder Kode Start ----------------
 
   .vi-tilbyder_knapper {
     height: 100vh;
@@ -804,9 +806,9 @@ textarea {
     width: 75%;
   }
 
-  // Sabine - Vi tilbyder Slut ---------------------
+  // Sabine - Vi tilbyder Slut ----------------------
 
-  // Markus - Events Kode Start --------------------
+  // Markus - Events Kode Start ---------------------
 
   .flex-kongresser, .flex-konkurrencer, .flex-projektarbejde {
     display: flex;
@@ -886,14 +888,14 @@ textarea {
     }
   }
 
-  // Markus - Events Kode Slut -----------------------
+  // Markus - Events Kode Slut ----------------------
 
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
 
-  // Joachim - Forside Kode Start --------------------
+  // Joachim - Forside Kode Start -------------------
 
   #medlem {
 
@@ -912,9 +914,9 @@ textarea {
     }
   }
 
-  // Joachim - Forside Kode Slut ---------------------
+  // Joachim - Forside Kode Slut --------------------
 
-  // Sabine - Vi Tilbyder Kode Start -----------------
+  // Sabine - Vi Tilbyder Kode Start ----------------
 
   .vi-tilbyder_knaptekst {
     font-size: 20px;
@@ -1060,9 +1062,9 @@ textarea {
     }
   }
 
-  // Joachim - Header Kode Slut --------------------
+  // Joachim - Header Kode Slut ---------------------
 
-  // Joachim - Forside Kode Start ------------------
+  // Joachim - Forside Kode Start -------------------
 
   #om_jci_section {
 
@@ -1166,7 +1168,7 @@ textarea {
     }
   }
 
-  // Joachim - Forside Kode Slut ------------------
+  // Joachim - Forside Kode Slut --------------------
 }
 
 @media print {
