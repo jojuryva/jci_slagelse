@@ -605,7 +605,55 @@ textarea {
     display: block; }
   .projektbillede img {
     width: 50vw;
-    margin: 10vh auto; } }
+    margin: 10vh auto; }
+
+  .overskriftmob {
+    display: none; }
+
+  .overskriftweb {
+    margin-top: 15vh;
+    display: block;
+    text-align: center; }
+    .overskriftweb h1 {
+      margin: 5vh 0;
+      color: white; }
+
+  textarea {
+    resize: none; }
+
+  .booking {
+    margin: 0 5vh 0 10vh;
+    width: 50vw; }
+    .booking .koncontainermob {
+      display: none; }
+    .booking .tekstilbokse {
+      width: 70%;
+      display: block;
+      color: white; }
+    .booking .koncontainerweb {
+      display: block; }
+
+  .billedeogtekst {
+    width: 50vw;
+    margin-right: 5vh; }
+    .billedeogtekst .billede {
+      display: block;
+      margin-bottom: 5vh; }
+      .billedeogtekst .billede img {
+        width: 50vw;
+        border-radius: 50%;
+        max-width: 300px;
+        margin: auto; }
+    .billedeogtekst .billedetekst {
+      display: block;
+      width: 50vw;
+      color: white; }
+      .billedeogtekst .billedetekst p {
+        text-align: center;
+        margin: auto; }
+
+  #send_button {
+    margin: 5vh auto; } }
 @media screen and (min-width: 992px) {
   #medlem article #medlem_flex_text div #medlem_box {
     display: flex;

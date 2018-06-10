@@ -890,6 +890,79 @@ textarea {
 
   // Markus - Events Kode Slut ----------------------
 
+  // Adem - Kontakt Kode Start ----------------------
+
+  .overskriftmob {
+    display: none;
+  }
+
+  .overskriftweb {
+    margin-top: 15vh;
+    display: block;
+    text-align: center;
+
+    h1 {
+      margin: 5vh 0;
+      color: white;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .booking {
+    margin: 0 5vh 0 10vh;
+    width: 50vw;
+
+    .koncontainermob {
+      display: none;
+    }
+
+    .tekstilbokse {
+      width: 70%;
+      display: block;
+      color: white;
+    }
+
+    .koncontainerweb {
+      display: block;
+    }
+  }
+
+  .billedeogtekst {
+    width: 50vw;
+    margin-right: 5vh;
+
+    .billede {
+      display: block;
+      margin-bottom: 5vh;
+
+      img {
+        width: 50vw;
+        border-radius: 50%;
+        max-width: 300px;
+        margin: auto;
+      }
+    }
+
+    .billedetekst {
+      display: block;
+      width: 50vw;
+      color: white;
+
+      p {
+        text-align: center;
+        margin: auto;
+      }
+    }
+  }
+
+  #send_button {
+    margin: 5vh auto;
+  }
+
+  // Adem - Kontakt Kode Slut -----------------------
 }
 
 @media screen and (min-width: 992px) {
