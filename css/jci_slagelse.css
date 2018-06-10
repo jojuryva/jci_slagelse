@@ -347,23 +347,12 @@ footer {
 .flex-konkurrencer {
   display: block; }
 
-.konkurrencer {
-  margin-right: 17%;
-  margin-left: 17%;
-  font-size: 7pt; }
-
-.ssdb {
-  margin-top: 10%;
-  margin-bottom: 25%; }
-
-.konkurrencetekst {
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 10%; }
-
-.dgm {
-  margin-top: 10%;
-  margin-bottom: 25%; }
+.konkurrencer .konkurrencetekst {
+  margin: 5vh; }
+.konkurrencer .ssdb {
+  background-color: white; }
+.konkurrencer .dgm {
+  color: white; }
 
 .flex-kongresser {
   display: block; }

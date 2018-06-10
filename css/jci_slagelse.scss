@@ -499,26 +499,18 @@ footer {
 }
 
 .konkurrencer {
-  margin-right: 17%;
-  margin-left: 17%;
-  font-size: 7pt;
-}
 
-.ssdb {
-  margin-top: 10%;
-  margin-bottom: 25%;
+  .konkurrencetekst {
+    margin: 5vh;
+  }
 
-}
+  .ssdb {
+    background-color: white;
+  }
 
-.konkurrencetekst {
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 10%;
-}
-
-.dgm {
-  margin-top: 10%;
-  margin-bottom: 25%;
+  .dgm {
+    color: white;
+  }
 }
 
 // Kongresser
