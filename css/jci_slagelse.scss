@@ -572,8 +572,12 @@ footer {
 
 }
 
-.projektbillede2{
-  display: none;
+.projektbillede {
+
+  img {
+    width: 75vw;
+    border-radius: 50%;
+  }
 }
 
 // Marcus Events Kode Slut -------------------------
@@ -712,7 +716,6 @@ footer {
     }
   }
 
-
   .vi-tilbyder_knaptekst {
     font-size: 20px;
   }
@@ -738,8 +741,6 @@ footer {
     }
   }
 
-
-
   .vi-tilbyder_runde-billeder {
     order: 2;
     width: 40%;
@@ -752,6 +753,20 @@ footer {
     order: 1;
     width: 40%;
     margin-top: 20px;
+  }
+
+  // Markus Events Kode Start ----------------
+
+  .flex-kongresser, .flex-konkurrencer, .flex-projektarbejde {
+    display: flex;
+  }
+
+  .projekttekst {
+    width: 50vw;
+  }
+
+  .projektbillede {
+    width: 50vw;
   }
 }
 
