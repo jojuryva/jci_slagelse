@@ -321,8 +321,6 @@ header {
 #medlem {
   padding-top: 5vh;
 
-
-
   h1 {
     color: white;
     text-align: center;
@@ -473,8 +471,6 @@ footer {
   color: white;
   width: 100%;
   padding-top: 15vh;
-
-
 }
 
 #vi-tilbyder_uddannelser {
@@ -488,6 +484,101 @@ footer {
 }
 
 // Sabine - Vi Tilbyder Kode Slut ------------------
+
+// Marcus Events Kode Start ------------------------
+
+.eventoverskrift {
+  text-align: center;
+  padding: 15vh 0 0;
+}
+
+// Konkurrencer
+
+.flex-konkurrencer {
+  display: block;
+}
+
+
+.konkurrencer {
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt;
+}
+
+
+.ssdb {
+  margin-top: 10%;
+  margin-bottom: 25%;
+
+}
+
+.konkurrencetekst {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+}
+
+.dgm {
+  margin-top: 10%;
+  margin-bottom: 25%;
+}
+
+// Kongresser
+
+.flex-kongresser {
+  display: block;
+}
+
+.kongresser {
+  background-color: white;
+
+  .kongrestekst {
+    margin: 5vh;
+  }
+}
+
+.nationalkongres {
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $orange
+    }
+  }
+
+  .nationalkongrestekst {
+    margin: 5vh;
+  }
+}
+
+// Projektarbejde
+
+.flex-projektarbejde{
+  display: block;
+}
+
+.projektarbejde{
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt;
+  margin-top: 10%;
+  margin-bottom: 25%;
+}
+
+.projekttekst{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+}
+
+.projektbillede2{
+  display: none;
+}
+
+// Marcus Events Kode Slut -------------------------
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil

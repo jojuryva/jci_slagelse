@@ -340,6 +340,67 @@ footer {
   padding-top: 10px;
   padding-bottom: 40px; }
 
+.eventoverskrift {
+  text-align: center;
+  padding: 15vh 0 0; }
+
+.flex-konkurrencer {
+  display: block; }
+
+.konkurrencer {
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt; }
+
+.ssdb {
+  margin-top: 10%;
+  margin-bottom: 25%; }
+
+.konkurrencetekst {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%; }
+
+.dgm {
+  margin-top: 10%;
+  margin-bottom: 25%; }
+
+.flex-kongresser {
+  display: block; }
+
+.kongresser {
+  background-color: white; }
+  .kongresser .kongrestekst {
+    margin: 5vh; }
+
+.nationalkongres {
+  color: white; }
+  .nationalkongres a {
+    text-decoration: none;
+    color: white; }
+    .nationalkongres a:hover {
+      color: #f37121; }
+  .nationalkongres .nationalkongrestekst {
+    margin: 5vh; }
+
+.flex-projektarbejde {
+  display: block; }
+
+.projektarbejde {
+  margin-right: 17%;
+  margin-left: 17%;
+  font-size: 7pt;
+  margin-top: 10%;
+  margin-bottom: 25%; }
+
+.projekttekst {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%; }
+
+.projektbillede2 {
+  display: none; }
+
 @media screen and (min-width: 768px) {
   #medlem article #medlem_box_2 {
     background-color: #0097d7;
