@@ -351,16 +351,30 @@ footer {
   margin: 5vh; }
 .konkurrencer .ssdb {
   background-color: white; }
+  .konkurrencer .ssdb img {
+    border-radius: 50%;
+    margin: auto; }
+  .konkurrencer .ssdb .ssdbbillede {
+    padding: 0 5vh 5vh; }
 .konkurrencer .dgm {
   color: white; }
-
-.flex-kongresser {
-  display: block; }
+  .konkurrencer .dgm img {
+    border-radius: 50%;
+    margin: auto; }
+  .konkurrencer .dgm .dgmbillede {
+    padding: 0 5vh 5vh; }
 
 .kongresser {
   background-color: white; }
-  .kongresser .kongrestekst {
-    margin: 5vh; }
+  .kongresser .flex-kongresser {
+    display: block; }
+    .kongresser .flex-kongresser .kongrestekst {
+      margin: 5vh; }
+    .kongresser .flex-kongresser .kongresbillede {
+      padding: 0 5vh 5vh; }
+      .kongresser .flex-kongresser .kongresbillede img {
+        border-radius: 50%;
+        margin: auto; }
 
 .nationalkongres {
   color: white; }
@@ -369,8 +383,13 @@ footer {
     color: white; }
     .nationalkongres a:hover {
       color: #f37121; }
-  .nationalkongres .nationalkongrestekst {
+  .nationalkongres .flex-kongresser .nationalkongrestekst {
     margin: 5vh; }
+  .nationalkongres .flex-kongresser .nationalkongresbillede {
+    padding: 0 5vh 5vh; }
+    .nationalkongres .flex-kongresser .nationalkongresbillede img {
+      margin: auto;
+      border-radius: 50%; }
 
 .flex-projektarbejde {
   display: block; }
@@ -389,9 +408,13 @@ footer {
     .projekttekst a:hover {
       color: #f37121; }
 
-.projektbillede img {
-  border-radius: 50%;
-  margin: auto auto 5vh; }
+.projektbillede {
+  padding: 0 5vh; }
+  .projektbillede #projektbillede_2 {
+    display: none; }
+  .projektbillede img {
+    border-radius: 50%;
+    margin: 5vh auto; }
 
 @media screen and (min-width: 768px) {
   #medlem article #medlem_box_2 {
@@ -478,11 +501,40 @@ footer {
   .flex-kongresser, .flex-konkurrencer, .flex-projektarbejde {
     display: flex; }
 
+  .konkurrencer .konkurrencetekst {
+    width: 50vw; }
+  .konkurrencer .ssdb img {
+    margin: auto; }
+  .konkurrencer .ssdb .ssdbbillede {
+    width: 50vw;
+    margin-top: 25vh;
+    max-width: 400px; }
+  .konkurrencer .dgm .dgmbillede {
+    width: 50vw;
+    margin-top: 15vh;
+    max-width: 400px; }
+
+  .kongresser .flex-kongresser, .nationalkongres .flex-kongresser {
+    display: flex; }
+    .kongresser .flex-kongresser .nationalkongresbillede, .kongresser .flex-kongresser .kongresbillede, .kongresser .flex-kongresser .nationalkongrestekst, .kongresser .flex-kongresser .kongrestekst, .nationalkongres .flex-kongresser .nationalkongresbillede, .nationalkongres .flex-kongresser .kongresbillede, .nationalkongres .flex-kongresser .nationalkongrestekst, .nationalkongres .flex-kongresser .kongrestekst {
+      width: 50vw; }
+    .kongresser .flex-kongresser .kongresbillede, .nationalkongres .flex-kongresser .kongresbillede {
+      margin-top: 5vh; }
+    .kongresser .flex-kongresser .nationalkongresbillede, .nationalkongres .flex-kongresser .nationalkongresbillede {
+      margin-top: 15vh; }
+
   .projekttekst {
     width: 50vw; }
 
+  .projektbillede #projektbillede_1 {
+    margin-top: 5vh;
+    max-width: 400px; }
+  .projektbillede #projektbillede_2 {
+    max-width: 400px;
+    display: block; }
   .projektbillede img {
-    width: 50vw; } }
+    width: 50vw;
+    margin: 10vh auto; } }
 @media screen and (min-width: 992px) {
   #medlem article #medlem_flex_text div #medlem_box {
     display: flex;

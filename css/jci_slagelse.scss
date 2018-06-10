@@ -492,7 +492,7 @@ footer {
   padding: 15vh 0 0;
 }
 
-// Konkurrencer
+// Konkurrencer ------------------------------------
 
 .flex-konkurrencer {
   display: block;
@@ -506,24 +506,51 @@ footer {
 
   .ssdb {
     background-color: white;
+
+    img {
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    .ssdbbillede {
+      padding: 0 5vh 5vh;
+    }
   }
 
   .dgm {
     color: white;
+
+    img {
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    .dgmbillede {
+      padding: 0 5vh 5vh;
+    }
   }
 }
 
-// Kongresser
-
-.flex-kongresser {
-  display: block;
-}
+// Kongresser ---------------------------------------
 
 .kongresser {
   background-color: white;
 
-  .kongrestekst {
-    margin: 5vh;
+  .flex-kongresser {
+    display: block;
+
+    .kongrestekst {
+      margin: 5vh;
+    }
+
+    .kongresbillede {
+      padding: 0 5vh 5vh;
+
+      img {
+        border-radius: 50%;
+        margin: auto;
+      }
+    }
   }
 }
 
@@ -539,8 +566,20 @@ footer {
     }
   }
 
-  .nationalkongrestekst {
-    margin: 5vh;
+  .flex-kongresser {
+
+    .nationalkongrestekst {
+      margin: 5vh;
+    }
+
+    .nationalkongresbillede {
+      padding: 0 5vh 5vh;
+
+      img {
+        margin: auto;
+        border-radius: 50%;
+      }
+    }
   }
 }
 
@@ -577,20 +616,24 @@ footer {
 }
 
 .projektbillede {
+  padding: 0 5vh;
+
+  #projektbillede_2 {
+    display: none;
+  }
 
   img {
     border-radius: 50%;
-
-    margin: auto auto 5vh;
+    margin: 5vh auto;
   }
 }
 
-// Marcus Events Kode Slut -------------------------
+// Marcus Events Kode Slut -----------------------------------
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
-  // Joachim Kode Start ----------------------------
+  // Joachim - Forside Kode Start ----------------------------
 
   #medlem {
 
@@ -631,7 +674,7 @@ footer {
     }
   }
 
-  // Joachim Kode Slut ----------------------
+  // Joachim - Forside Kode Slut ----------------------
 
   // Sabine - Vi Tilbyder Kode Start ------------------
 
@@ -698,12 +741,65 @@ footer {
   .textbox {
     width: 75%;
   }
-  // Sabine Vi tilbyder Slut ---------------------
 
-  // Markus Events Kode Start --------------------
+  // Sabine - Vi tilbyder Slut ---------------------
+
+  // Markus - Events Kode Start --------------------
 
   .flex-kongresser, .flex-konkurrencer, .flex-projektarbejde {
     display: flex;
+  }
+
+  .konkurrencer {
+
+    .konkurrencetekst {
+      width: 50vw;
+    }
+
+    .ssdb {
+
+      img {
+        margin: auto;
+      }
+
+      .ssdbbillede {
+        width: 50vw;
+        margin-top: 25vh;
+        max-width: 400px;
+      }
+    }
+
+    .dgm {
+
+      img {
+
+      }
+
+      .dgmbillede {
+        width: 50vw;
+        margin-top: 15vh;
+        max-width: 400px;
+      }
+    }
+  }
+
+  .kongresser, .nationalkongres {
+
+    .flex-kongresser {
+      display: flex;
+
+      .nationalkongresbillede, .kongresbillede, .nationalkongrestekst, .kongrestekst {
+        width: 50vw;
+      }
+
+      .kongresbillede {
+        margin-top: 5vh;
+      }
+
+      .nationalkongresbillede {
+        margin-top: 15vh;
+      }
+    }
   }
 
   .projekttekst {
@@ -712,14 +808,29 @@ footer {
 
   .projektbillede {
 
+    #projektbillede_1 {
+      margin-top: 5vh;
+      max-width: 400px;
+    }
+
+    #projektbillede_2 {
+      max-width: 400px;
+      display: block;
+    }
+
     img {
       width: 50vw;
+      margin: 10vh auto;
     }
   }
+
+  // Markus - Events Kode Slut -----------------------
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  // Joachim - Forside Kode Start --------------------
 
   #medlem {
 
@@ -737,6 +848,10 @@ footer {
       }
     }
   }
+
+  // Joachim - Forside Kode Slut ---------------------
+
+  // Sabine - Vi Tilbyder Kode Start -----------------
 
   .vi-tilbyder_knaptekst {
     font-size: 20px;
@@ -776,10 +891,14 @@ footer {
     width: 40%;
     margin-top: 20px;
   }
+
+  // Sabine - Vi Tilbyder Kode Slut -----------------
 }
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  // Joachim - Header Kode Start --------------------
 
   header {
     display: flex;
@@ -877,6 +996,10 @@ footer {
       }
     }
   }
+
+  // Joachim - Header Kode Slut --------------------
+
+  // Joachim - Forside Kode Start ------------------
 
   #om_jci_section {
 
@@ -979,6 +1102,8 @@ footer {
       flex-direction: row;
     }
   }
+
+  // Joachim - Forside Kode Slut ------------------
 }
 
 @media print {
