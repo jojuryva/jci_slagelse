@@ -485,6 +485,31 @@ footer {
 
 // Sabine - Vi Tilbyder Kode Slut -------------------
 
+// Adem - Kalender Kode Start -----------------------
+
+#kalendermob {
+  margin-top: 15vh;
+  color: white;
+
+  p {
+    margin: 5vh;
+    text-align: center;
+  }
+}
+
+.mobbillede {
+  color: white;
+  max-width: 500px;
+  padding: 0 5vh;
+  margin: 0 auto;
+}
+
+.webbillede {
+  display: none;
+}
+
+// Adem - Kalender Kode Slut ------------------------
+
 // Marcus Events Kode Start -------------------------
 
 .eventoverskrift {
@@ -901,6 +926,21 @@ textarea {
   }
 
   // Sabine - Vi tilbyder Slut ----------------------
+
+  // Adem - Kalender Kode Start ---------------------
+
+  .mobbillede {
+    display: none;
+  }
+
+  .webbillede {
+    display: block;
+    max-width: 750px;
+    padding: 0 5vh;
+    margin: 0 auto;
+  }
+
+  // Adem - Kalender Kode Slut ----------------------
 
   // Markus - Events Kode Start ---------------------
 

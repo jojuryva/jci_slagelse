@@ -340,6 +340,22 @@ footer {
   padding-top: 10px;
   padding-bottom: 40px; }
 
+#kalendermob {
+  margin-top: 15vh;
+  color: white; }
+  #kalendermob p {
+    margin: 5vh;
+    text-align: center; }
+
+.mobbillede {
+  color: white;
+  max-width: 500px;
+  padding: 0 5vh;
+  margin: 0 auto; }
+
+.webbillede {
+  display: none; }
+
 .eventoverskrift {
   text-align: center;
   padding: 15vh 0 0; }
@@ -636,6 +652,15 @@ textarea {
 
   .textbox {
     width: 75%; }
+
+  .mobbillede {
+    display: none; }
+
+  .webbillede {
+    display: block;
+    max-width: 750px;
+    padding: 0 5vh;
+    margin: 0 auto; }
 
   .flex-kongresser, .flex-konkurrencer, .flex-projektarbejde {
     display: flex; }
