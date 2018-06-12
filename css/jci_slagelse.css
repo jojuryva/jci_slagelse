@@ -255,6 +255,8 @@ header {
         padding-top: 5vh;
         text-align: center;
         color: white; }
+    #medlem article #medlem_box_web {
+      display: none; }
 
 #hvem_er_vi {
   background-color: white;
