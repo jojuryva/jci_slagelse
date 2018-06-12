@@ -566,11 +566,6 @@ textarea {
     cursor: pointer;
     outline: none; }
 
-#kontakt_footer {
-  position: fixed;
-  width: 100vw;
-  bottom: 0; }
-
 @media screen and (min-width: 768px) {
   #medlem article #medlem_box_2 {
     background-color: #0097d7;
@@ -728,7 +723,7 @@ textarea {
     resize: none; }
 
   .booking {
-    margin: 0 5vh 0 10vh;
+    margin-left: 5vh;
     width: 50vw; }
     .booking .koncontainermob {
       display: none; }
@@ -740,8 +735,7 @@ textarea {
       display: block; }
 
   .billedeogtekst {
-    width: 50vw;
-    margin-right: 5vh; }
+    width: 50vw; }
     .billedeogtekst .billede {
       display: block;
       margin-bottom: 5vh; }
@@ -759,7 +753,7 @@ textarea {
         margin: auto; }
 
   #send_button {
-    margin: 5vh auto; } }
+    margin: 5vh; } }
 @media screen and (min-width: 992px) {
   #medlem article #medlem_flex_text div #medlem_box {
     display: flex;

@@ -806,9 +806,6 @@ textarea {
 }
 
 #kontakt_footer {
-  position: fixed;
-  width: 100vw;
-  bottom: 0;
 }
 
 // Adem - Kontakt Kode Slut -------------------------
@@ -1066,7 +1063,7 @@ textarea {
   }
 
   .booking {
-    margin: 0 5vh 0 10vh;
+    margin-left: 5vh;
     width: 50vw;
 
     .koncontainermob {
@@ -1086,7 +1083,6 @@ textarea {
 
   .billedeogtekst {
     width: 50vw;
-    margin-right: 5vh;
 
     .billede {
       display: block;
@@ -1113,7 +1109,7 @@ textarea {
   }
 
   #send_button {
-    margin: 5vh auto;
+    margin: 5vh;
   }
 
   // Adem - Kontakt Kode Slut -----------------------
