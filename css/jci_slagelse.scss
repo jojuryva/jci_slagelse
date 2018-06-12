@@ -630,6 +630,94 @@ footer {
 
 // Marcus Events Kode Slut --------------------------
 
+// Celina - Grangia Kode Start --------------------
+
+.sunset {
+  background: url("../images/grangia.jpg") center;
+  background-size: cover;
+  height: 50vh;
+  opacity: 0.8;
+  text-align: center;
+  color: white;
+
+  h1 {
+    margin: 0 5vh;
+    font-size: 24px;
+    line-height: 50vh;
+  }
+}
+
+#slideshow {
+  margin: 5vh auto;
+  position: relative;
+  width: 75vw;
+  height: 50vh;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  text-align: center;
+
+  h2 {
+    margin: 2.5vh;
+  }
+
+  p {
+    margin: 2.5vh 5vh;
+  }
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+@mixin boks {
+  background-color: #0097d7;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.boks1, .boks2, .boks3 {
+  @include boks;
+}
+
+@mixin icons {
+  color: white;
+  text-align: center;
+}
+.fa-user, .fa-question, .fa-suitcase {
+  @include icons;
+}
+
+.box1, .box2, .box3 {
+  @include boks;
+  margin: 2.5vh auto;
+  line-height: 160px;
+}
+
+.flexgrangia {
+  display: none;
+}
+
+.infograngia {
+  margin: 5vh;
+
+  h3 {
+    margin-bottom: 5vh;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto;
+    width: 75vw;
+  }
+}
+
+// Celina - Grangia Kode Slut ---------------------
+
 // Adem - Kontakt Kode Start ------------------------
 
 .overskriftmob {
@@ -690,6 +778,12 @@ textarea {
 
 #send_button {
   @include button;
+}
+
+#kontakt_footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
 }
 
 // Adem - Kontakt Kode Slut -------------------------
@@ -890,6 +984,26 @@ textarea {
 
   // Markus - Events Kode Slut ----------------------
 
+  // Celina - Grangia Kode Start --------------------
+
+  #slideshow {
+    display: none;
+  }
+
+  .flexgrangia {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 5vh 5vh;
+  }
+
+  .boks1, .boks2, .boks3 {
+    margin: auto;
+    line-height: 160px;
+  }
+
+  // Celina - Grangia Kode Slut ---------------------
+
   // Adem - Kontakt Kode Start ----------------------
 
   .overskriftmob {
@@ -1031,6 +1145,7 @@ textarea {
   }
 
   // Sabine - Vi Tilbyder Kode Slut -----------------
+
 }
 
 @media screen and (min-width: 1200px) {

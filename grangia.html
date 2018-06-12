@@ -1,3 +1,4 @@
+<!-- Celina har kodet denne side og Joachim har rettet til i CSS -->
 <!DOCTYPE html>
 <!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
@@ -73,6 +74,115 @@
                 <a href="events_projektarbejde.html">Projektarbejde</a>
             </div>
         </header>
+        <div class="sunset">
+            <h1>
+                Grangia Erhvervspris
+            </h1>
+        </div>
+        <article class="infograngia">
+            <h3>
+                Grangia Erhvervspris uddeles af JCI Slagelse,
+                <br>
+                til en ung og handlekraftig person
+            </h3>
+            <p>
+                JCI Slagelse står sammen med vores samarbejdsparter, Slagelse Erhvervscenter bag Grangia.
+                Grangia Erhvervspris bliver overrakt til prisoverrækkelse ved Erhvervs Awards,
+                her mødes ca. 300 erhvervsfolk fra Slagelse kommune.
+                Vi er i en tid, hvor erhvervslivet står under meget pres.
+                Ny teknologi sætter nye og spændende udfordringer.
+                De, som gør en forskel og tør at tage chancer skal værdsættes og hyldes.
+                De sætter nemlig værdi og vækst i det lokale erhvervsliv.
+                Derfor skal de med unikke egenskaber belønnes for deres hårde arbejde for det lokale og for Slagelse.
+            </p>
+        </article>
+        <div class="flexgrangia">
+            <div class="flexindstil">
+                <div class="boks1">
+                    <i class="fas fa-user fa-3x"></i>
+                </div>
+                <h2>
+                    Indstil kandidat
+                </h2>
+                <p>
+                    Alle kan indstille en kollega, medarbejder,
+                    <br>
+                    samarbejdspartner eller andre personer, som, man
+                    <br>
+                    synes, lever op til kriterierne for prisen.
+                </p>
+            </div>
+            <div class="flexkriterier">
+                <div class="boks2">
+                    <i class="fas fa-question fa-3x"></i>
+                </div>
+                <h2>
+                    Kriterier
+                </h2>
+                <p>
+                    Kriterierne for indstilling af kandidate til Grangia<br>
+                    Erhvervspris, er kandidaten en som gør en positiv<br>
+                    forskel for erhvervslivet i Slagelse Kommune.
+                </p>
+            </div>
+
+            <div class="flexblivsponsor">
+                <div class="boks3">
+                    <i class="fas fa-suitcase fa-3x"></i>
+                </div>
+                <h2>
+                    Bliv sponsor
+                </h2>
+                <p>
+                    Lad dig og din virksomhed være med til at støtte unge<br>
+                    lokale talenter og på den måde bidrage til vækst og<br>
+                    udvikling samt skabe fremgang i erhvervslivet i<br>
+                    Slagelse Kommune.
+                </p>
+            </div>
+        </div>
+        <div id="slideshow">
+            <div class="slide1">
+                <div class="box1">
+                    <i class="fas fa-user fa-3x"></i>
+                </div>
+                <h2>
+                    Indstil kandidat
+                </h2>
+                <p>
+                    Alle kan indstille en kollega, medarbejder,
+                    samarbejdspartner eller andre personer, som, man
+                    synes, lever op til kriterierne for prisen.
+                </p>
+            </div>
+            <div class="slide2">
+                <div class="box2">
+                    <i class="fas fa-question fa-3x"></i>
+                </div>
+                <h2>
+                    Kriterier
+                </h2>
+                <p>
+                    Kriterierne for indstilling af kandidate til Grangia
+                    Erhvervspris, er kandidaten en som gør en positiv
+                    forskel for erhvervslivet i Slagelse Kommune.
+                </p>
+            </div>
+            <div class="slide3">
+                <div class="box3">
+                    <i class="fas fa-suitcase fa-3x"></i>
+                </div>
+                <h2>
+                    Bliv sponsor
+                </h2>
+                <p>
+                    Lad dig og din virksomhed være med til at støtte unge
+                    lokale talenter og på den måde bidrage til vækst og
+                    udvikling samt skabe fremgang i erhvervslivet i
+                    Slagelse Kommune.
+                </p>
+            </div>
+        </div>
         <div id="back_to_top">
             <i class="fas fa-angle-up fa-2x"></i>
         </div>
@@ -84,8 +194,6 @@
                 <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
         </footer>
-        <script src="js/particles.js"></script>
-        <script src="js/app.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
             $(document).ready(function (e) {
@@ -140,6 +248,21 @@
                     }, function (e) {
                         $("#clickShowWeb_2_2").hide();
                     });
+                });
+
+
+                $(function() {
+
+                    $("#slideshow > div:gt(0)").hide();
+
+                    setInterval(function() {
+                        $('#slideshow > div:first')
+                            .fadeOut(3000)
+                            .next(3000)
+                            .fadeIn(3000)
+                            .end()
+                            .appendTo('#slideshow');
+                    },  7000);
                 });
 
                 $("#back_to_top").click(function(){
