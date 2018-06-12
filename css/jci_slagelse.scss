@@ -741,6 +741,10 @@ footer {
   }
 }
 
+#grangia_button {
+  @include button;
+}
+
 // Celina - Grangia Kode Slut ---------------------
 
 // Adem - Kontakt Kode Start ------------------------
@@ -803,9 +807,6 @@ textarea {
 
 #send_button {
   @include button;
-}
-
-#kontakt_footer {
 }
 
 // Adem - Kontakt Kode Slut -------------------------
@@ -1031,7 +1032,7 @@ textarea {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    padding: 0 5vh 5vh;
+    padding: 0 5vh;
   }
 
   .boks1, .boks2, .boks3 {

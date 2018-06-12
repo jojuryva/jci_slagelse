@@ -495,6 +495,39 @@ footer {
     margin: 0 auto;
     width: 75vw; }
 
+#grangia_button {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0097d7;
+  width: 66vw;
+  height: 7.5vh;
+  border-radius: 7.5vh;
+  max-width: 300px;
+  margin: 7.5vh auto;
+  cursor: pointer;
+  text-decoration: none; }
+  #grangia_button:hover {
+    background-color: white; }
+    #grangia_button:hover p {
+      color: #f37121; }
+  #grangia_button p {
+    margin-left: 2vw;
+    line-height: 7.5vh;
+    font-size: 14px;
+    color: white;
+    max-width: 300px;
+    cursor: pointer; }
+  #grangia_button button {
+    height: 7.5vh;
+    width: 7.5vh;
+    background-color: #f37121;
+    border: none;
+    color: white;
+    border-radius: 7.5vh;
+    max-width: 300px;
+    cursor: pointer;
+    outline: none; }
+
 .overskriftmob {
   margin-top: 15vh;
   color: white; }
@@ -702,7 +735,7 @@ textarea {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    padding: 0 5vh 5vh; }
+    padding: 0 5vh; }
 
   .boks1, .boks2, .boks3 {
     margin: auto;
