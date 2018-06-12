@@ -1,1 +1,10 @@
 ErrorDocument 404     /404.html
+RewriteEngine On
+RewriteRule    ^404?$    /404.html    [NC,L]
+RewriteRule    ^vi-tilbyder?$    /vi_tilbyder.html    [NC,L]
+RewriteRule    ^events/kalender?$    /events_kalender.html    [NC,L]
+RewriteRule    ^events/konkurrencer?$    /events_konkurrencer    [NC,L]
+RewriteRule    ^events/kongresser?$    /events_kongresser.html    [NC,L]
+RewriteRule    ^events/projektarbejde?$    /events_projektarbejde.html    [NC,L]
+RewriteRule    ^grangia?$    /grangia.html    [NC,L]
+RewriteRule    ^kontakt?$    /kontakt.html    [NC,L]
